@@ -1,0 +1,200 @@
+.masthead {
+	display: flex;
+	align-items: center;;
+  width:100%;
+  background:blue;
+  height:40vw;
+  padding: 20px;
+  color: $white;
+  text-shadow: 1px 1px $greigh-darker;
+  background-image: url(../i/kitchen-cooking.jpg);
+  h1 {
+    display: block;
+    font-size: 5vw;
+    font-weight: 400;
+    width: 50%;
+  }
+
+  h6 {
+    display: block;
+    font-size: 3.5vw;
+    font-weight: 100;
+    width: 50%;
+  }
+}
+
+
+.section {
+  margin: 20px auto;
+}
+
+.skillset {
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: flex-start;
+  padding-bottom:60px;
+  border-bottom: 1px dotted $greigh-mid;
+
+  .skill {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    width: 100%;
+    margin-top:40px;
+    height:28vh;
+
+    div {
+      margin:4vw 0px;
+      display: inline-block;
+      float: left;
+      width: 60%;
+    }
+
+    h3 {
+      width: 100%;
+      font-size: 2.25vw;
+    }
+
+    p {
+      width: 100%;
+      font-size: 1.75vw;
+      font-weight: 200;
+    }
+
+    img {
+      width:40%;
+      height:100%;
+      margin: 20px auto;
+    }
+
+    &:nth-child(odd) {
+      h3 {
+        float:left;
+      }
+      p {
+        float:left;
+        padding-right:20px;
+      }
+    }
+    &:nth-child(even) {
+      div {
+        float:right;
+      }
+      h3 {
+        padding-left:40px;
+      }
+      p {
+        padding-left:40px;
+        padding-right:0px;
+      }
+    }
+  }
+}
+
+.trust {
+  padding:20px 0px;
+  padding-bottom:60px;
+  h4 {
+    width:100%;
+    font-size: 1.25vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: $greigh-mid-dark;
+  }
+  ul {
+    list-style-type: none;
+    text-align:center;
+    width: 100%;
+    margin-top:40px;
+    li {
+      float: left;
+      width:20%;
+      img {
+        width: 85%;
+      }
+    }
+  }
+}
+
+.quote {
+  background:$greigh-darker;
+  padding:20px 0px;
+  padding-bottom:50px;
+  color:$white;
+  h4 {
+    width:100%;
+    font-size: 1.25vw;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p {
+    margin-top:30px;
+    text-align: center;
+    font-size: 2.75vw;
+    font-style: italic;
+    span {
+      font-size: 2.15vw;
+    }
+  }
+}
+
+.featured {
+  padding:20px 0px;
+  margin-bottom:60px;
+  h4 {
+    width:100%;
+    font-size: 1.25vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: $greigh-mid-dark;
+  }
+
+  ul {
+    list-style-type: none;
+    text-align:center;
+    width: 100%;
+    margin-top:40px;
+    li {
+      float: left;
+      width:33%;
+      &:nth-child(1), &:nth-child(2) {
+        border-right:1px solid $greigh-mid;
+      }
+
+      a {
+        color:inherit;
+        &:hover {
+          cursor: pointer;
+          text-decoration: none;
+          color:inherit;
+        }
+      }
+      img {
+        width: 90%;
+      }
+      h5 {
+        font-size: 1.55vw;
+        font-weight:400;
+        margin: 5px auto;
+        padding: 5px;
+        display: block;
+        text-align: center;
+        text-overflow: ellipsis;
+        width:95%;
+      	white-space: nowrap;
+      	overflow: hidden;
+      }
+      p {
+        font-size: 1.25vw;
+        color:$greigh-mid;
+      }
+      &:hover {
+        background: $greigh-light;
+      }
+    }
+  }
+}

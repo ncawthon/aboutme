@@ -1,0 +1,21 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start; }
+  nav img {
+    width: 25%;
+    flex: 1 0 0; }
+  nav ul {
+    width: 75%;
+    flex: 3 0 0;
+    text-transform: uppercase; }
