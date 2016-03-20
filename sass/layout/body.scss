@@ -1,25 +1,251 @@
 .masthead {
-	display: flex;
-	align-items: center;;
   width:100%;
-  background:blue;
-  height:40vw;
-  padding: 20px;
+  height:38vw;
   color: $white;
-  text-shadow: 1px 1px $greigh-darker;
-  background-image: url(../i/kitchen-cooking.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &.home {
+    h1 {
+      z-index:2;
+      margin-top:-50px;
+      text-shadow: 1px 1px $greigh-darker;
+    }
+  }
+  div.clouds {
+      position:absolute;
+      z-index:1;
+      margin:0 auto;
+      width:100%;
+      overflow: hidden;
+      height:38vw;
+      top:0px;
+      background-color:$greigh-darker;
+      border-bottom:1px solid $greigh-darker;
+  }
+  div.clouds video, div.clouds object, div.clouds embed {
+      /*width: 100%;*/
+      width: 100%;
+      margin: 0 auto;
+      opacity: .5;
+  }
+
+	&.subpage {
+		height:16vw;
+
+    $types: (
+      (microsoft),
+      (parc),
+      (sfgiants),
+      (loggly),
+      (npm),
+      (swy),
+      (walmart),
+      (united),
+      (canada),
+      (sf2024),
+      (verizon)
+    );
+
+    @each $item in $types {
+      &.#{$item}:before {
+        background-image: url(../i/#{$item}/masthead.png);
+        }
+      }
+
+    &:before {
+        content: '';
+        background-size: 105%;
+        background-position-y: -50px;
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+        z-index: -9999;
+        position: absolute;
+        margin-bottom: -5px;
+        height: 16.5vw;
+        width: 101%;
+        top:50px;
+      }
+    }
+
+    &.projects {
+      height: 25vw;
+      h1, h6 {
+        color:$white;
+        text-shadow: 1px 1px $greigh-darker;
+      }
+        &:before {
+        height: 25vw;
+        background-image: url(../i/mastheads/projects.jpg);
+        background-position-y: -150px;
+        background-size: 100%;
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        border-bottom: 1px solid #333;
+      }
+    }
+
+    &.talks {
+      height: 25vw;
+      h1, h6 {
+        color:$white;
+        text-shadow: 1px 1px $greigh-darker;
+      }
+        &:before {
+        height: 25vw;
+        background-image: url(../i/mastheads/talks-masthead.jpg);
+        background-position-y: -40px;
+        background-size: 100%;
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+
+        border-bottom: 1px solid #333;
+      }
+    }
+
+    &.microsoft {
+      h1, h6 {
+        color:$greigh-darker;
+        text-shadow: 1px 0px $white;
+      }
+      &:before {
+      }
+    }
+
+
+    &.sfgiants {
+      &:before {
+        background-position-y:0px;
+        background-size: 125%;
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+      }
+    }
+
+    &.loggly {
+      h1, h6 {
+        text-shadow: 1px 1px $black;
+      }
+      &:before {
+        background-position-y:-140px;
+        background-size: 125%;
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        -ms-filter: blur(3px);
+      }
+    }
+
+    &.parc {
+      h1, h6 {
+        text-shadow: 1px 1px $black;
+      }
+      &:before {
+        background-position-y:-140px;
+        background-size: 125%;
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        -ms-filter: blur(3px);
+      }
+    }
+
+
+    &.npm {
+      h1, h6 {
+        color:$black;
+        text-shadow: 1px 1px $white;
+      }
+      &:before {
+        background-position-y:-10%;
+        background-size:50%;
+        opacity: .3;
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+      }
+    }
+
+    &.swy {
+      h1, h6 {
+        color:$white;
+        text-shadow: 1px 1px $black;
+      }
+      &:before {
+        background-position-y:-50px;
+        background-size: 100%;
+      }
+    }
+
+    &.walmart {
+      h1, h6 {
+        color:$white;
+        text-shadow: 1px 1px $greigh-darker;
+      }
+      &:before {
+        background-position-y:-140px;
+        background-size: 125%;
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        -ms-filter: blur(3px);
+      }
+    }
+
+    &.verizon {
+      h1, h6 {
+        color:$white;
+        text-shadow: 1px 1px $greigh-darker;
+      }
+      &:before {
+        background-size: 105%;
+        background-position-x:-45px;
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        -ms-filter: blur(3px);
+      }
+    }
+
+    &.united {
+      h1, h6 {
+        color:$black;
+        text-shadow: 1px 1px $white;
+      }
+      &:before {
+        background-position-y:-25%;
+        background-size: 60%;
+        opacity: .3;
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+      }
+    }
+
+
   h1 {
-    display: block;
     font-size: 5vw;
-    font-weight: 400;
-    width: 50%;
+    font-weight: 100;
+    position: relative;
+    z-index: 0;
   }
 
   h6 {
-    display: block;
-    font-size: 3.5vw;
+    font-size: 1.5vw;
     font-weight: 100;
-    width: 50%;
+    text-align: left;
   }
 }
 
@@ -29,9 +255,8 @@
 }
 
 .skillset {
-  margin-top: 2vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: center;
@@ -40,56 +265,65 @@
   border-bottom: 1px dotted $greigh-mid;
 
   .skill {
-    order: 0;
-    flex: 0 1 auto;
+    flex: 1 0 auto;
+    display: flex;
     align-self: auto;
     width: 100%;
-    margin-top:40px;
-    height:28vh;
+    height:auto;
 
-    div {
+    &.left {
+      flex-direction: row;
+      .deets {
+        padding-right:40px;
+      }
+    }
+
+    &.right {
+      flex-direction: row-reverse;
+      .deets {
+        padding-left:40px;
+      }
+    }
+
+    .deets {
+      flex: 3 0 auto;
       margin:4vw 0px;
       display: inline-block;
       float: left;
       width: 60%;
+      font-size: 115%;
     }
 
     h3 {
+      font-size: 175%;
       width: 100%;
-      font-size: 2.25vw;
+      margin-bottom: 20px;
+      margin-top:0px;
     }
 
-    p {
-      width: 100%;
-      font-size: 1.75vw;
-      font-weight: 200;
-    }
-
-    img {
-      width:40%;
-      height:100%;
-      margin: 20px auto;
-    }
-
-    &:nth-child(odd) {
-      h3 {
-        float:left;
-      }
-      p {
-        float:left;
-        padding-right:20px;
-      }
-    }
-    &:nth-child(even) {
-      div {
-        float:right;
-      }
-      h3 {
-        padding-left:40px;
-      }
-      p {
-        padding-left:40px;
-        padding-right:0px;
+    .thumb {
+      flex: 1 0 auto;
+      max-height:320px;
+      overflow: hidden;
+      img {
+          /* corrects small inline gap at bottom of containing div */
+          display: block;
+          width: 100%; /* corrects obscure Firefox bug */
+          max-width: 100%;
+          /* just in case, to force correct aspect ratio */
+          height: auto !important;
+          display: block; /* corrects small inline gap at bottom of containing div */
+          width: 100%; /* corrects obscure Firefox bug */
+          max-width: 100%;
+          /* just in case, to force correct aspect ratio */
+          height: auto !important;
+          /*width: auto\9;
+          /* ie8+9 - use modernizr instead of this \9 hack */
+          /* lt ie8 */
+          -ms-interpolation-mode: bicubic;
+          /* optionally force a minimum size if img src size is known: */
+          /* min-height: 320px; /* max-height of .crop-height */
+          /* min-width: 480px; /* proportional to above */
       }
     }
   }
@@ -132,12 +366,15 @@
     text-transform: uppercase;
   }
   p {
+    color:$white;
     margin-top:30px;
     text-align: center;
     font-size: 2.75vw;
     font-style: italic;
+    line-height: 135%;
     span {
       font-size: 2.15vw;
+      line-height: 150%;
     }
   }
 }
@@ -175,6 +412,7 @@
       }
       img {
         width: 90%;
+        margin-top:10px;
       }
       h5 {
         font-size: 1.55vw;
@@ -193,7 +431,7 @@
         color:$greigh-mid;
       }
       &:hover {
-        background: $greigh-light;
+        background: $yellow;
       }
     }
   }

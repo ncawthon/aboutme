@@ -10,16 +10,16 @@ nav {
   span {
     float:left;
     color:$white;
-    text-transform: uppercase;
     display:block;
     a {
       display: block;
       padding: 15px;
+      margin-left:-15px;
       color: $white;
       &:hover {
         background: #333;
         text-decoration: none;
-        color: $greigh-mid;
+        color: $yellow;
         cursor: pointer;
       }
     }
@@ -27,26 +27,39 @@ nav {
 
   ul {
     list-style-type: none;
-    text-transform: uppercase;
     display: inline;
     float: right;
     li {
       float:left;
       display:block;
-      width: 120px;
+      width: auto;
       text-align: center;
-
+      margin: 0px 20px;
       a {
         display: block;
         padding: 15px;
         color: $white;
-        &:hover {
+        &:hover, &:active {
           background: #333;
           text-decoration: none;
-          color: $greigh-mid;
+          color: $yellow;
           cursor: pointer;
         }
       }
+      &:last-of-type {
+        margin-right: -20px;
+      }
     }
+  }
+}
+
+.breadcrumb {
+  padding:10px 15px;
+  margin-bottom:0px;
+  border-radius:0px;
+  &.bottom{
+    border-bottom:1px solid $greigh-mid;
+    border-top:1px solid $greigh-mid;
+
   }
 }

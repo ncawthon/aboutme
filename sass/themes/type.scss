@@ -1,7 +1,26 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 p {
+  font-weight: 200;
+  font-size: 130%;
+  line-height: 175%;
+  color:$greigh-darker;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+h1.sub-page {
+  display:block;
+  padding-top:10px;
+  line-height: 12vw;
+  font-weight: 100;
+  text-transform: uppercase;
+  color:$greigh-mid-dark;
+  text-shadow: 1px 1px $greigh-light;
+}
+
+a:hover {
+  text-decoration: none;
 }

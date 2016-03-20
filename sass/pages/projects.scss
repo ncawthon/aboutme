@@ -1,0 +1,118 @@
+ul.projects {
+
+  img {
+    background-color:$greigh-mid;
+    display: block;
+    border: 1px solid #aaa;
+  }
+
+  li {
+    list-style: none;
+
+    a {
+      display: flex;
+      justify-content: flex-start;;
+      border-top:1px solid $greigh-mid;
+      padding:20px;
+      color:$black;
+
+      &.first {
+        border:none;
+        margin-top: 20px;
+      }
+
+      .logo {
+        flex: 1 0 0;
+        max-height:120px;
+        max-width:120px;
+      }
+
+      .deets {
+        flex:4 0 0;
+        margin:20px auto;
+      }
+
+      .thumb {
+        flex:3 0 0;
+        max-height:320px;
+        overflow: hidden;
+        margin:20px auto;
+        img {
+            /* corrects small inline gap at bottom of containing div */
+          	display: block;
+            width: 100%; /* corrects obscure Firefox bug */
+          	max-width: 100%;
+          	/* just in case, to force correct aspect ratio */
+          	height: auto !important;
+            display: block; /* corrects small inline gap at bottom of containing div */
+            width: 100%; /* corrects obscure Firefox bug */
+            max-width: 100%;
+            /* just in case, to force correct aspect ratio */
+            height: auto !important;
+            /*width: auto\9;
+            /* ie8+9 - use modernizr instead of this \9 hack */
+            /* lt ie8 */
+            -ms-interpolation-mode: bicubic;
+          	/* optionally force a minimum size if img src size is known: */
+          	/* min-height: 320px; /* max-height of .crop-height */
+          	/* min-width: 480px; /* proportional to above */
+        }
+      }
+
+      &.left {
+        flex-direction: row;
+        .thumb {
+          margin-left: 50px;
+        }
+      }
+
+      &.right {
+        flex-direction: row-reverse;
+
+        .deets {
+          text-align: left;
+        }
+
+        .thumb {
+          flex:3 0 0;
+          margin-right:50px;
+        }
+      }
+      &:hover {
+        background:$yellow;
+      }
+    }
+  }
+}
+
+.projects {
+  h2 {
+    margin-top:0px;
+  }
+}
+
+.project-page {
+  margin:40px auto;
+  text-align: center;
+
+  img {
+    display:block;
+    background:$greigh-mid;
+    border: 1px solid $greigh-mid-dark;
+    height:400px;
+    width:100%;
+  }
+
+  caption {
+    display:block;
+    padding:10px auto;
+  }
+}
+
+
+.breadcrumb>li+li.next {
+  float:right;
+  &:before {
+  content:none;
+  }
+}
