@@ -5,8 +5,12 @@
   overflow: hidden;
   height: 36vw;
 
+  &.credits {
+      background:black url(../i/mastheads/credits-bg.jpg) no-repeat;
+  }
+
   @media (max-width: 768px) {
-    height: 300px;
+    height: 270px;
   }
 
   video {
@@ -16,27 +20,48 @@
     width: 100%;
     z-index: -1000;
     overflow: hidden;
-    background:transparent url(i/mastheads/home-bg.png) no-repeat;
+    background:transparent url(../i/mastheads/home-bg.png) no-repeat;
     background-size:100%;
+    @media (max-width: 768px) {
+      height:auto;
+    }
   }
 
-  &.home {
+  &.home, &.credits {
     border-bottom: 1px solid #aaa;
 
-    h1 {
+    h1, h4 {
       position: absolute;
-      color:$white;
       z-index:2;
-      top:13vw;
-      left:10%;
-      line-height: 135%;
+      color:$white;
+      width:100%;
       text-shadow: 1px 1px $greigh-darker;
+      span {
+        padding-left:10px;
+        padding-right:10px;
+        background: rgba(0,0,0,.55);
+      }
+    }
+
+    h1 {
+      top:100px;
+      line-height: 135%;
       @media (max-width: 768px) {
-        top: 150px;
+        top: 120px;
+        font-size: 250%;
+        text-align: center;
       }
-      & span {
-        background: rgba(0,0,0,.5);
+    }
+    h4 {
+      top:175px;
+      font-weight: 200;
+      font-size: 150%;
+      @media (max-width: 768px) {
+        top: 195px;
+        font-size: 200%;
+        text-align: center;
       }
+
     }
   }
 
@@ -104,7 +129,7 @@
           font-size:82px;
         }
         @media (max-width: 768px) {
-          top: 12vw;
+          top: 10vw;
           font-size:64px;
         }
       }
@@ -143,7 +168,7 @@
           font-size:82px;
         }
         @media (max-width: 768px) {
-          top: 14vw;
+          top: 10vw;
           font-size:64px;
         }
       }
@@ -166,8 +191,14 @@
 
     &.microsoft {
       h1, h6 {
-        color:$greigh-darker;
-        text-shadow: 1px 0px $white;
+        color:$white;
+        text-shadow: 1px 1px $greigh-darker;
+        margin-bottom:5px;
+        span {
+          padding-left:10px;
+          padding-right:10px;
+          background: rgba(255,0,192,.25);
+        }
       }
       &:before {
         background-position-y: -50px;
@@ -180,6 +211,12 @@
       h1, h6 {
         color:$white;
         text-shadow: 1px 1px $greigh-darker;
+        margin-bottom:5px;
+        span {
+          padding-left:10px;
+          padding-right:10px;
+          background: rgba(255,114,0,.5);
+        }
       }
       &:before {
         background-position-y:0px;
@@ -190,6 +227,12 @@
       h1, h6 {
         color:$white;
         text-shadow: 1px 1px $greigh-darker;
+        margin-bottom:5px;
+        span {
+          padding-left:10px;
+          padding-right:10px;
+          background: rgba(57,29,2,.5);
+        }
       }
       &:before {
         background-position-y:-140px;
@@ -205,6 +248,12 @@
       h1, h6 {
         color:$white;
         text-shadow: 1px 1px $greigh-darker;
+        margin-bottom:5px;
+        span {
+          padding-left:10px;
+          padding-right:10px;
+          background: rgba(123,123,123,.75);
+        }
       }
       &:before {
         background-position-y:-140px;
@@ -215,8 +264,14 @@
 
     &.npm {
       h1, h6 {
-        color:$black;
-        text-shadow: 1px 1px $white;
+        color:$white;
+        text-shadow: 1px 1px $greigh-darker;
+        margin-bottom:5px;
+        span {
+          padding-left:10px;
+          padding-right:10px;
+          background: rgba(255,0,0,.5);
+        }
       }
       &:before {
         background-position-y:-10%;
@@ -232,7 +287,13 @@
     &.swy {
       h1, h6 {
         color:$white;
-        text-shadow: 1px 1px $black;
+        text-shadow: 1px 1px $greigh-darker;
+        margin-bottom:5px;
+        span {
+          padding-left:10px;
+          padding-right:10px;
+          background: rgba(31,69,5,.5);
+        }
       }
       &:before {
         background-position-y:-50px;
@@ -244,6 +305,12 @@
       h1, h6 {
         color:$white;
         text-shadow: 1px 1px $greigh-darker;
+        margin-bottom:5px;
+        span {
+          padding-left:10px;
+          padding-right:10px;
+          background: rgba(0,0,255,.25);
+        }
       }
       &:before {
         background-position-y:-140px;
@@ -262,6 +329,12 @@
       h1, h6 {
         color:$white;
         text-shadow: 1px 1px $greigh-darker;
+        margin-bottom:5px;
+        span {
+          padding-left:10px;
+          padding-right:10px;
+          background: rgba(255,0,0,.5);
+        }
       }
       &:before {
         background-size: 105%;
@@ -275,8 +348,14 @@
 
     &.united {
       h1, h6 {
-        color:$black;
-        text-shadow: 1px 1px $white;
+        color:$white;
+        text-shadow: 1px 1px $greigh-darker;
+        margin-bottom:5px;
+        span {
+          padding-left:10px;
+          padding-right:10px;
+          background: rgba(40,5,69,.5);
+        }
       }
       &:before {
         background-position-y:-25%;
@@ -331,7 +410,6 @@
     &.last {
       border-bottom:none;
     }
-
     &.left {
       flex-direction: row;
       .deets {
@@ -377,6 +455,10 @@
       flex: 1 0 auto;
       max-height:320px;
       overflow: hidden;
+      @media (max-width: 768px) {
+        display: none;
+      }
+
       img {
           max-width: 100%;
           width: 100%;
@@ -401,10 +483,7 @@
           // /* min-width: 480px; /* proportional to above */
 
           @media (max-width: 768px) {
-              display:block;;
-              width:100%;
-              float:left;
-              clear: both;
+            display: none;
           }
 
       }
@@ -424,7 +503,7 @@
   padding-bottom:60px;
   h4 {
     width:100%;
-    font-size: 1.25vw;
+    font-size: 18px;
     text-align: center;
     text-transform: uppercase;
     color: $greigh-mid-dark;
@@ -454,7 +533,7 @@
   color:$white;
   h4 {
     width:100%;
-    font-size: 1.25vw;
+    font-size: 18px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -482,7 +561,7 @@
   margin-bottom:60px;
   h4 {
     width:100%;
-    font-size: 1.25vw;
+    font-size: 18px;
     text-align: center;
     text-transform: uppercase;
     color: $greigh-mid-dark;
