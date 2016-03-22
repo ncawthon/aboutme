@@ -1,3 +1,16 @@
+.nav {
+  color:$white;
+  li {
+    color:$white;
+    a {
+      color:$white;
+      &:hover {
+        color:blue;
+      }
+    }
+  }
+
+}
 .breadcrumb {
   padding:10px 15px;
   margin-bottom:0px;

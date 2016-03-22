@@ -21,6 +21,8 @@
   }
 
   &.home {
+    border-bottom: 1px solid #aaa;
+
     h1 {
       position: absolute;
       color:$white;
@@ -125,6 +127,8 @@
 
     &.talks {
       height: 25vw;
+      background-position-y:0px;
+
       @media (max-width: 768px) {
         height:30vw;
       }
@@ -323,6 +327,10 @@
     align-self: auto;
     width: 100%;
     height:auto;
+    border-bottom:1px solid #ccc;
+    &.last {
+      border-bottom:none;
+    }
 
     &.left {
       flex-direction: row;
@@ -370,24 +378,27 @@
       max-height:320px;
       overflow: hidden;
       img {
-          /* corrects small inline gap at bottom of containing div */
-          display: block;
-          width: 100%; /* corrects obscure Firefox bug */
           max-width: 100%;
-          /* just in case, to force correct aspect ratio */
-          height: auto !important;
-          display: block; /* corrects small inline gap at bottom of containing div */
-          width: 100%; /* corrects obscure Firefox bug */
-          max-width: 100%;
-          /* just in case, to force correct aspect ratio */
-          height: auto !important;
-          /*width: auto\9;
-          /* ie8+9 - use modernizr instead of this \9 hack */
-          /* lt ie8 */
-          -ms-interpolation-mode: bicubic;
-          /* optionally force a minimum size if img src size is known: */
-          /* min-height: 320px; /* max-height of .crop-height */
-          /* min-width: 480px; /* proportional to above */
+          width: 100%;
+          margin-top:20px;
+          // /* corrects small inline gap at bottom of containing div */
+          // display: block;
+          // width: 80%; /* corrects obscure Firefox bug */
+          // max-width: 80%;
+          // /* just in case, to force correct aspect ratio */
+          // height: auto !important;
+          // display: block; /* corrects small inline gap at bottom of containing div */
+          // width: 100%; /* corrects obscure Firefox bug */
+          // max-width: 80%;
+          // /* just in case, to force correct aspect ratio */
+          // height: auto !important;
+          // /*width: auto\9;
+          // /* ie8+9 - use modernizr instead of this \9 hack */
+          // /* lt ie8 */
+          // -ms-interpolation-mode: bicubic;
+          // /* optionally force a minimum size if img src size is known: */
+          // /* min-height: 320px; /* max-height of .crop-height */
+          // /* min-width: 480px; /* proportional to above */
 
           @media (max-width: 768px) {
               display:block;;
@@ -437,7 +448,7 @@
 }
 
 .quote {
-  background:$greigh-darker;
+  background:#31708F;
   padding:20px 0px;
   padding-bottom:50px;
   color:$white;
@@ -452,7 +463,6 @@
     margin-top:30px;
     text-align: center;
     font-size: 2.75vw;
-    font-style: italic;
     line-height: 135%;
     @media (max-width: 768px) {
       font-size:200%;

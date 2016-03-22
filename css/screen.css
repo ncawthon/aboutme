@@ -2003,19 +2003,21 @@ a:hover {
     overflow: hidden;
     background: transparent url(i/mastheads/home-bg.png) no-repeat;
     background-size: 100%; }
-  .masthead.home h1 {
-    position: absolute;
-    color: #fff;
-    z-index: 2;
-    top: 13vw;
-    left: 10%;
-    line-height: 135%;
-    text-shadow: 1px 1px #474747; }
-    @media (max-width: 768px) {
-      .masthead.home h1 {
-        top: 150px; } }
-    .masthead.home h1 span {
-      background: rgba(0, 0, 0, 0.5); }
+  .masthead.home {
+    border-bottom: 1px solid #aaa; }
+    .masthead.home h1 {
+      position: absolute;
+      color: #fff;
+      z-index: 2;
+      top: 13vw;
+      left: 10%;
+      line-height: 135%;
+      text-shadow: 1px 1px #474747; }
+      @media (max-width: 768px) {
+        .masthead.home h1 {
+          top: 150px; } }
+      .masthead.home h1 span {
+        background: rgba(0, 0, 0, 0.5); }
   .masthead.subpage {
     height: 14vw; }
     @media (max-width: 768px) {
@@ -2124,7 +2126,8 @@ a:hover {
           height: 35vw;
           background-position-y: 0px; } }
   .masthead.talks {
-    height: 25vw; }
+    height: 25vw;
+    background-position-y: 0px; }
     @media (max-width: 768px) {
       .masthead.talks {
         height: 30vw; } }
@@ -2261,7 +2264,10 @@ a:hover {
     display: flex;
     align-self: auto;
     width: 100%;
-    height: auto; }
+    height: auto;
+    border-bottom: 1px solid #ccc; }
+    .skillset .skill.last {
+      border-bottom: none; }
     .skillset .skill.left {
       flex-direction: row; }
       .skillset .skill.left .deets {
@@ -2298,27 +2304,9 @@ a:hover {
       max-height: 320px;
       overflow: hidden; }
       .skillset .skill .thumb img {
-        /* corrects small inline gap at bottom of containing div */
-        display: block;
-        width: 100%;
-        /* corrects obscure Firefox bug */
         max-width: 100%;
-        /* just in case, to force correct aspect ratio */
-        height: auto !important;
-        display: block;
-        /* corrects small inline gap at bottom of containing div */
         width: 100%;
-        /* corrects obscure Firefox bug */
-        max-width: 100%;
-        /* just in case, to force correct aspect ratio */
-        height: auto !important;
-        /*width: auto\9;
-        /* ie8+9 - use modernizr instead of this \9 hack */
-        /* lt ie8 */
-        -ms-interpolation-mode: bicubic;
-        /* optionally force a minimum size if img src size is known: */
-        /* min-height: 320px; /* max-height of .crop-height */
-        /* min-width: 480px; /* proportional to above */ }
+        margin-top: 20px; }
         @media (max-width: 768px) {
           .skillset .skill .thumb img {
             display: block;
@@ -2356,7 +2344,7 @@ a:hover {
         width: 85%; }
 
 .quote {
-  background: #474747;
+  background: #31708F;
   padding: 20px 0px;
   padding-bottom: 50px;
   color: #fff; }
@@ -2370,7 +2358,6 @@ a:hover {
     margin-top: 30px;
     text-align: center;
     font-size: 2.75vw;
-    font-style: italic;
     line-height: 135%; }
     @media (max-width: 768px) {
       .quote p {
@@ -2427,6 +2414,15 @@ a:hover {
       .featured ul li:hover {
         background: #fdfce8; }
 
+.nav {
+  color: #fff; }
+  .nav li {
+    color: #fff; }
+    .nav li a {
+      color: #fff; }
+      .nav li a:hover {
+        color: blue; }
+
 .breadcrumb {
   padding: 10px 15px;
   margin-bottom: 0px;
@@ -2438,31 +2434,24 @@ a:hover {
 footer {
   width: 100%;
   height: 50px;
-  background-color: #111; }
-  footer ul {
-    list-style-type: none;
-    text-transform: uppercase;
-    display: inline;
-    float: right; }
-    footer ul li {
-      float: right;
-      display: block;
-      width: 60px;
-      text-align: center; }
-      footer ul li a {
-        display: block;
-        width: 60px;
-        height: 50px;
-        padding: 0px;
-        line-height: 50px;
-        text-align: center;
-        color: #fff;
-        font-size: 25px; }
-        footer ul li a:hover {
-          background: #333;
-          text-decoration: none;
-          color: #ccc;
-          cursor: pointer; }
+  background-color: #111;
+  color: #fff; }
+  footer a {
+    display: block;
+    height: 50px;
+    padding: 0px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff; }
+    footer a .credits {
+      font-size: 24px; }
+    footer a .iconic {
+      font-size: 20px; }
+    footer a:hover {
+      background: #333;
+      text-decoration: none;
+      color: #ccc;
+      cursor: pointer; }
 
 .hilite {
   display: flex;
