@@ -4097,6 +4097,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/i\/loggly\/masthead-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 604150,
+		"inputAbbreviatedPath": "\/i\/loggly\/masthead-small.png",
+		"outputAbbreviatedPath": "\/i\/loggly\/masthead-small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/i\/loggly\/masthead.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -4174,6 +4185,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/i\/mastheads\/home-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28553,
+		"inputAbbreviatedPath": "\/i\/mastheads\/home-bg.jpg",
+		"outputAbbreviatedPath": "\/i\/mastheads\/home-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/i\/mastheads\/home-bg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -4214,6 +4236,17 @@
 		"initialSize": 4.48476e+06,
 		"inputAbbreviatedPath": "\/i\/mastheads\/talks-masthead.png",
 		"outputAbbreviatedPath": "\/i\/mastheads\/talks-masthead.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/i\/microsoft\/masthead-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 166336,
+		"inputAbbreviatedPath": "\/i\/microsoft\/masthead-small.png",
+		"outputAbbreviatedPath": "\/i\/microsoft\/masthead-small.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4357,6 +4390,17 @@
 		"initialSize": 538866,
 		"inputAbbreviatedPath": "\/i\/microsoft\/zune-5d.jpg",
 		"outputAbbreviatedPath": "\/i\/microsoft\/zune-5d.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/i\/npm\/masthead-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 169443,
+		"inputAbbreviatedPath": "\/i\/npm\/masthead-small.png",
+		"outputAbbreviatedPath": "\/i\/npm\/masthead-small.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4548,6 +4592,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/i\/npm\/npm-thumb-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 314199,
+		"inputAbbreviatedPath": "\/i\/npm\/npm-thumb-1.png",
+		"outputAbbreviatedPath": "\/i\/npm\/npm-thumb-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/i\/npm\/thumb.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -4555,6 +4610,17 @@
 		"initialSize": 125486,
 		"inputAbbreviatedPath": "\/i\/npm\/thumb.png",
 		"outputAbbreviatedPath": "\/i\/npm\/thumb.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/i\/parc\/masthead-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 397984,
+		"inputAbbreviatedPath": "\/i\/parc\/masthead-small.png",
+		"outputAbbreviatedPath": "\/i\/parc\/masthead-small.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4709,6 +4775,17 @@
 		"initialSize": 3.0889e+06,
 		"inputAbbreviatedPath": "\/i\/parc\/thumb.png",
 		"outputAbbreviatedPath": "\/i\/parc\/thumb.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/i\/sfgiants\/masthead-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 173618,
+		"inputAbbreviatedPath": "\/i\/sfgiants\/masthead-small.png",
+		"outputAbbreviatedPath": "\/i\/sfgiants\/masthead-small.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4944,6 +5021,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/i\/sfgiants\/sfgiants-video-thumb-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.0859e+06,
+		"inputAbbreviatedPath": "\/i\/sfgiants\/sfgiants-video-thumb-1.png",
+		"outputAbbreviatedPath": "\/i\/sfgiants\/sfgiants-video-thumb-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/i\/sfgiants\/thumb.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -4995,6 +5083,17 @@
 		"initialSize": 18433,
 		"inputAbbreviatedPath": "\/i\/skills\/tools.png",
 		"outputAbbreviatedPath": "\/i\/skills\/tools.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/i\/swy\/masthead-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 414236,
+		"inputAbbreviatedPath": "\/i\/swy\/masthead-small.png",
+		"outputAbbreviatedPath": "\/i\/swy\/masthead-small.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5314,6 +5413,17 @@
 		"initialSize": 201720,
 		"inputAbbreviatedPath": "\/i\/talks\/ux-research-thumb.png",
 		"outputAbbreviatedPath": "\/i\/talks\/ux-research-thumb.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/i\/united\/masthead-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 247805,
+		"inputAbbreviatedPath": "\/i\/united\/masthead-small.png",
+		"outputAbbreviatedPath": "\/i\/united\/masthead-small.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5978,6 +6088,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/i\/verizon\/masthead-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 283563,
+		"inputAbbreviatedPath": "\/i\/verizon\/masthead-small.png",
+		"outputAbbreviatedPath": "\/i\/verizon\/masthead-small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/i\/verizon\/masthead.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -6128,6 +6249,17 @@
 		"initialSize": 88349,
 		"inputAbbreviatedPath": "\/i\/verizon\/verizon-4l.png",
 		"outputAbbreviatedPath": "\/i\/verizon\/verizon-4l.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/i\/walmart\/masthead-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303573,
+		"inputAbbreviatedPath": "\/i\/walmart\/masthead-small.png",
+		"outputAbbreviatedPath": "\/i\/walmart\/masthead-small.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -6369,6 +6501,28 @@
 		"outputAbbreviatedPath": "\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/js\/gif-click\/min\/script-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/gif-click\/min\/script-min.js",
+		"outputAbbreviatedPath": "\/js\/gif-click\/min\/min\/script-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/gif-click\/script.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/gif-click\/script.js",
+		"outputAbbreviatedPath": "\/js\/gif-click\/min\/script-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/js\/min\/modernizer-min.js": {
 		"fileType": 64,
@@ -7225,6 +7379,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/vendors\/animate.scss",
 		"outputAbbreviatedPath": "\/css\/animate.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/vendors\/gif-click.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/vendors\/gif-click.scss",
+		"outputAbbreviatedPath": "\/css\/gif-click.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

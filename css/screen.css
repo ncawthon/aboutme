@@ -5,6 +5,14 @@
 body {
   margin-top: 50px; }
 
+@media (min-width: 768px) {
+  .clearfix {
+    clear: both; } }
+
+@media (max-width: 768px) {
+  .sm-clearfix {
+    clear: both; } }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Sans Pro', sans-serif; }
 
@@ -1979,76 +1987,128 @@ a:hover {
   content: '\e26f'; }
 
 .masthead {
+  display: block;
   width: 100%;
-  height: 38vw;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .masthead.home h1 {
-    z-index: 2;
-    margin-top: -50px;
-    text-shadow: 1px 1px #474747; }
-  .masthead div.clouds {
-    position: absolute;
-    z-index: 1;
-    margin: 0 auto;
+  overflow: hidden;
+  height: 36vw; }
+  @media (max-width: 768px) {
+    .masthead {
+      height: 300px; } }
+  .masthead video {
+    position: relative;
+    display: block;
+    min-width: 100%;
     width: 100%;
+    z-index: -1000;
     overflow: hidden;
-    height: 38vw;
-    top: 0px;
-    background-color: #474747;
-    border-bottom: 1px solid #474747; }
-  .masthead div.clouds video, .masthead div.clouds object, .masthead div.clouds embed {
-    /*width: 100%;*/
-    width: 100%;
-    margin: 0 auto;
-    opacity: .5; }
+    background: transparent url(i/mastheads/home-bg.png) no-repeat;
+    background-size: 100%; }
+  .masthead.home h1 {
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+    top: 13vw;
+    left: 10%;
+    line-height: 135%;
+    text-shadow: 1px 1px #474747; }
+    @media (max-width: 768px) {
+      .masthead.home h1 {
+        top: 150px; } }
+    .masthead.home h1 span {
+      background: rgba(0, 0, 0, 0.5); }
   .masthead.subpage {
-    height: 16vw; }
+    height: 14vw; }
+    @media (max-width: 768px) {
+      .masthead.subpage {
+        height: 16vw; } }
     .masthead.subpage.microsoft:before {
       background-image: url(../i/microsoft/masthead.png); }
+      @media (max-width: 768px) {
+        .masthead.subpage.microsoft:before {
+          background-image: url(../i/microsoft/masthead-small.png); } }
     .masthead.subpage.parc:before {
       background-image: url(../i/parc/masthead.png); }
+      @media (max-width: 768px) {
+        .masthead.subpage.parc:before {
+          background-image: url(../i/parc/masthead-small.png); } }
     .masthead.subpage.sfgiants:before {
       background-image: url(../i/sfgiants/masthead.png); }
+      @media (max-width: 768px) {
+        .masthead.subpage.sfgiants:before {
+          background-image: url(../i/sfgiants/masthead-small.png); } }
     .masthead.subpage.loggly:before {
       background-image: url(../i/loggly/masthead.png); }
+      @media (max-width: 768px) {
+        .masthead.subpage.loggly:before {
+          background-image: url(../i/loggly/masthead-small.png); } }
     .masthead.subpage.npm:before {
       background-image: url(../i/npm/masthead.png); }
+      @media (max-width: 768px) {
+        .masthead.subpage.npm:before {
+          background-image: url(../i/npm/masthead-small.png); } }
     .masthead.subpage.swy:before {
       background-image: url(../i/swy/masthead.png); }
+      @media (max-width: 768px) {
+        .masthead.subpage.swy:before {
+          background-image: url(../i/swy/masthead-small.png); } }
     .masthead.subpage.walmart:before {
       background-image: url(../i/walmart/masthead.png); }
+      @media (max-width: 768px) {
+        .masthead.subpage.walmart:before {
+          background-image: url(../i/walmart/masthead-small.png); } }
     .masthead.subpage.united:before {
       background-image: url(../i/united/masthead.png); }
+      @media (max-width: 768px) {
+        .masthead.subpage.united:before {
+          background-image: url(../i/united/masthead-small.png); } }
     .masthead.subpage.canada:before {
       background-image: url(../i/canada/masthead.png); }
+      @media (max-width: 768px) {
+        .masthead.subpage.canada:before {
+          background-image: url(../i/canada/masthead-small.png); } }
     .masthead.subpage.sf2024:before {
       background-image: url(../i/sf2024/masthead.png); }
+      @media (max-width: 768px) {
+        .masthead.subpage.sf2024:before {
+          background-image: url(../i/sf2024/masthead-small.png); } }
     .masthead.subpage.verizon:before {
       background-image: url(../i/verizon/masthead.png); }
+      @media (max-width: 768px) {
+        .masthead.subpage.verizon:before {
+          background-image: url(../i/verizon/masthead-small.png); } }
     .masthead.subpage:before {
       content: '';
-      background-size: 105%;
+      background-size: 120%;
       background-position-y: -50px;
-      -webkit-filter: blur(5px);
-      -moz-filter: blur(5px);
-      -o-filter: blur(5px);
-      -ms-filter: blur(5px);
+      background-position-x: -15px;
       filter: blur(5px);
       z-index: -9999;
       position: absolute;
-      margin-bottom: -5px;
-      height: 16.5vw;
-      width: 101%;
-      top: 50px; }
+      height: 15vw;
+      width: 100%;
+      top: 50px;
+      margin-top: -10px;
+      overflow: hidden; }
+      @media (max-width: 768px) {
+        .masthead.subpage:before {
+          height: 20vw; } }
   .masthead.projects {
     height: 25vw; }
+    @media (max-width: 768px) {
+      .masthead.projects {
+        height: 35vw; } }
     .masthead.projects h1, .masthead.projects h6 {
       color: #fff;
-      text-shadow: 1px 1px #474747; }
+      text-shadow: 1px 1px #474747;
+      font-size: 300%;
+      top: 10vw; }
+      @media (min-width: 768px) {
+        .masthead.projects h1, .masthead.projects h6 {
+          font-size: 82px; } }
+      @media (max-width: 768px) {
+        .masthead.projects h1, .masthead.projects h6 {
+          top: 12vw;
+          font-size: 64px; } }
     .masthead.projects:before {
       height: 25vw;
       background-image: url(../i/mastheads/projects.jpg);
@@ -2059,11 +2119,27 @@ a:hover {
       -o-filter: blur(0px);
       -ms-filter: blur(0px);
       border-bottom: 1px solid #333; }
+      @media (max-width: 768px) {
+        .masthead.projects:before {
+          height: 35vw;
+          background-position-y: 0px; } }
   .masthead.talks {
     height: 25vw; }
+    @media (max-width: 768px) {
+      .masthead.talks {
+        height: 30vw; } }
     .masthead.talks h1, .masthead.talks h6 {
       color: #fff;
-      text-shadow: 1px 1px #474747; }
+      text-shadow: 1px 1px #474747;
+      font-size: 300%;
+      top: 10vw; }
+      @media (min-width: 768px) {
+        .masthead.talks h1, .masthead.talks h6 {
+          font-size: 82px; } }
+      @media (max-width: 768px) {
+        .masthead.talks h1, .masthead.talks h6 {
+          top: 14vw;
+          font-size: 64px; } }
     .masthead.talks:before {
       height: 25vw;
       background-image: url(../i/mastheads/talks-masthead.jpg);
@@ -2074,18 +2150,24 @@ a:hover {
       -o-filter: blur(0px);
       -ms-filter: blur(0px);
       border-bottom: 1px solid #333; }
+      @media (max-width: 768px) {
+        .masthead.talks:before {
+          height: 30vw;
+          background-position-y: 0px; } }
   .masthead.microsoft h1, .masthead.microsoft h6 {
     color: #474747;
     text-shadow: 1px 0px #fff; }
+  .masthead.microsoft:before {
+    background-position-y: -50px;
+    background-size: 105%; }
+  .masthead.sfgiants h1, .masthead.sfgiants h6 {
+    color: #fff;
+    text-shadow: 1px 1px #474747; }
   .masthead.sfgiants:before {
-    background-position-y: 0px;
-    background-size: 125%;
-    -webkit-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -o-filter: blur(4px);
-    -ms-filter: blur(4px); }
+    background-position-y: 0px; }
   .masthead.loggly h1, .masthead.loggly h6 {
-    text-shadow: 1px 1px #111; }
+    color: #fff;
+    text-shadow: 1px 1px #474747; }
   .masthead.loggly:before {
     background-position-y: -140px;
     background-size: 125%;
@@ -2094,14 +2176,11 @@ a:hover {
     -o-filter: blur(3px);
     -ms-filter: blur(3px); }
   .masthead.parc h1, .masthead.parc h6 {
-    text-shadow: 1px 1px #111; }
+    color: #fff;
+    text-shadow: 1px 1px #474747; }
   .masthead.parc:before {
     background-position-y: -140px;
-    background-size: 125%;
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px); }
+    background-size: 125%; }
   .masthead.npm h1, .masthead.npm h6 {
     color: #111;
     text-shadow: 1px 1px #fff; }
@@ -2129,6 +2208,9 @@ a:hover {
     -moz-filter: blur(3px);
     -o-filter: blur(3px);
     -ms-filter: blur(3px); }
+    @media (max-width: 768px) {
+      .masthead.walmart:before {
+        background-position-y: 0px; } }
   .masthead.verizon h1, .masthead.verizon h6 {
     color: #fff;
     text-shadow: 1px 1px #474747; }
@@ -2152,13 +2234,15 @@ a:hover {
     -ms-filter: blur(0px); }
   .masthead h1 {
     font-size: 5vw;
-    font-weight: 100;
+    font-weight: 200;
     position: relative;
     z-index: 0; }
   .masthead h6 {
     font-size: 1.5vw;
-    font-weight: 100;
-    text-align: left; }
+    font-weight: 200; }
+    @media (max-width: 768px) {
+      .masthead h6 {
+        font-size: 14px; } }
 
 .section {
   margin: 20px auto; }
@@ -2182,10 +2266,16 @@ a:hover {
       flex-direction: row; }
       .skillset .skill.left .deets {
         padding-right: 40px; }
+        @media (max-width: 768px) {
+          .skillset .skill.left .deets {
+            padding-left: 0px; } }
     .skillset .skill.right {
       flex-direction: row-reverse; }
       .skillset .skill.right .deets {
         padding-left: 40px; }
+        @media (max-width: 768px) {
+          .skillset .skill.right .deets {
+            padding-left: 0px; } }
     .skillset .skill .deets {
       flex: 3 0 auto;
       margin: 4vw 0px;
@@ -2193,6 +2283,11 @@ a:hover {
       float: left;
       width: 60%;
       font-size: 115%; }
+      @media (max-width: 768px) {
+        .skillset .skill .deets {
+          flex: 1 0 0 auto;
+          width: 100%;
+          text-align: center; } }
     .skillset .skill h3 {
       font-size: 175%;
       width: 100%;
@@ -2224,6 +2319,18 @@ a:hover {
         /* optionally force a minimum size if img src size is known: */
         /* min-height: 320px; /* max-height of .crop-height */
         /* min-width: 480px; /* proportional to above */ }
+        @media (max-width: 768px) {
+          .skillset .skill .thumb img {
+            display: block;
+            width: 100%;
+            float: left;
+            clear: both; } }
+      @media (max-width: 768px) {
+        .skillset .skill .thumb {
+          display: inline-block;
+          width: 100%;
+          float: left;
+          clear: none; } }
 
 .trust {
   padding: 20px 0px;
@@ -2242,6 +2349,9 @@ a:hover {
     .trust ul li {
       float: left;
       width: 20%; }
+      @media (max-width: 768px) {
+        .trust ul li {
+          width: 50%; } }
       .trust ul li img {
         width: 85%; }
 
@@ -2262,9 +2372,15 @@ a:hover {
     font-size: 2.75vw;
     font-style: italic;
     line-height: 135%; }
+    @media (max-width: 768px) {
+      .quote p {
+        font-size: 200%; } }
     .quote p span {
       font-size: 2.15vw;
       line-height: 150%; }
+      @media (max-width: 768px) {
+        .quote p span {
+          font-size: 85%; } }
 
 .featured {
   padding: 20px 0px;
@@ -2310,51 +2426,6 @@ a:hover {
         color: #ccc; }
       .featured ul li:hover {
         background: #fdfce8; }
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 50px;
-  background-color: #111;
-  box-shadow: 1px 1px #aaa; }
-  nav span {
-    float: left;
-    color: #fff;
-    display: block; }
-    nav span a {
-      display: block;
-      padding: 15px;
-      margin-left: -15px;
-      color: #fff; }
-      nav span a:hover {
-        background: #333;
-        text-decoration: none;
-        color: #fdfce8;
-        cursor: pointer; }
-  nav ul {
-    list-style-type: none;
-    display: inline;
-    float: right; }
-    nav ul li {
-      float: left;
-      display: block;
-      width: auto;
-      text-align: center;
-      margin: 0px 20px; }
-      nav ul li a {
-        display: block;
-        padding: 15px;
-        color: #fff; }
-        nav ul li a:hover, nav ul li a:active {
-          background: #333;
-          text-decoration: none;
-          color: #fdfce8;
-          cursor: pointer; }
-      nav ul li:last-of-type {
-        margin-right: -20px; }
 
 .breadcrumb {
   padding: 10px 15px;
@@ -2403,7 +2474,7 @@ footer {
     width: 100%;
     background: #f9f9f9;
     padding: 30px auto;
-    padding-bottom: 50px; }
+    padding-bottom: 20px; }
     .hilite a:hover {
       background: #fdfce8; }
   .hilite span {
@@ -2425,7 +2496,10 @@ footer {
 .talks {
   margin-bottom: 40px;
   line-height: 195%;
-  font-size: 1.25vw; }
+  font-size: 18px; }
+  @media (max-width: 768px) {
+    .talks {
+      font-size: 22px; } }
   .talks h4 {
     text-transform: uppercase;
     color: #aaa;
@@ -2446,13 +2520,13 @@ ul.projects li {
     ul.projects li a.first {
       border: none;
       margin-top: 20px; }
-    ul.projects li a .logo {
-      flex: 1 0 0;
-      max-height: 120px;
-      max-width: 120px; }
     ul.projects li a .deets {
       flex: 4 0 0;
       margin: 20px auto; }
+      @media (max-width: 768px) {
+        ul.projects li a .deets {
+          flex: 1 0 0;
+          margin: 0px auto; } }
     ul.projects li a .thumb {
       flex: 3 0 0;
       max-height: 320px;
@@ -2480,10 +2554,18 @@ ul.projects li {
         /* optionally force a minimum size if img src size is known: */
         /* min-height: 320px; /* max-height of .crop-height */
         /* min-width: 480px; /* proportional to above */ }
+      @media (max-width: 768px) {
+        ul.projects li a .thumb {
+          flex: 1 0 0;
+          margin: 0px auto; } }
     ul.projects li a.left {
       flex-direction: row; }
       ul.projects li a.left .thumb {
         margin-left: 50px; }
+        @media (max-width: 768px) {
+          ul.projects li a.left .thumb {
+            flex: 0 0 0;
+            margin-left: 0px; } }
     ul.projects li a.right {
       flex-direction: row-reverse; }
       ul.projects li a.right .deets {
@@ -2491,6 +2573,10 @@ ul.projects li {
       ul.projects li a.right .thumb {
         flex: 3 0 0;
         margin-right: 50px; }
+        @media (max-width: 768px) {
+          ul.projects li a.right .thumb {
+            flex: 0 0 0;
+            margin-right: 0px; } }
     ul.projects li a:hover {
       background: #fdfce8; }
 
@@ -2553,6 +2639,10 @@ ul.projects li {
   top: -75px;
   z-index: 20;
   color: #474747; }
+  @media (max-width: 768px) {
+    .carousel-fade p {
+      font-size: 12px;
+      font-weight: bolder; } }
 .carousel-fade .carousel-control {
   z-index: 2;
   background-image: none;

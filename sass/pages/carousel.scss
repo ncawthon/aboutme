@@ -15,7 +15,7 @@
           video {
             border:1px solid #eee;
             &.loggly {
-              border:none;              
+              border:none;
             }
           }
 
@@ -54,6 +54,10 @@
       top:-75px;
       z-index: 20;
       color: $greigh-darker;
+      @media (max-width: 768px) {
+        font-size:12px;
+        font-weight: bolder;
+      }
     }
 
     .carousel-control {

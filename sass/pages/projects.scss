@@ -21,15 +21,13 @@ ul.projects {
         margin-top: 20px;
       }
 
-      .logo {
-        flex: 1 0 0;
-        max-height:120px;
-        max-width:120px;
-      }
-
       .deets {
         flex:4 0 0;
         margin:20px auto;
+        @media (max-width: 768px) {
+          flex:1 0 0;
+          margin:0px auto;
+        }
       }
 
       .thumb {
@@ -57,12 +55,21 @@ ul.projects {
           	/* min-height: 320px; /* max-height of .crop-height */
           	/* min-width: 480px; /* proportional to above */
         }
+        @media (max-width: 768px) {
+          flex:1 0 0;
+          margin:0px auto;
+        }
       }
 
       &.left {
         flex-direction: row;
+
         .thumb {
           margin-left: 50px;
+          @media (max-width: 768px) {
+            flex:0 0 0;
+            margin-left:0px;
+          }
         }
       }
 
@@ -76,6 +83,11 @@ ul.projects {
         .thumb {
           flex:3 0 0;
           margin-right:50px;
+
+          @media (max-width: 768px) {
+            flex:0 0 0;
+            margin-right:0px;
+          }
         }
       }
       &:hover {

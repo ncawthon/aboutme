@@ -8,7 +8,7 @@
     width: 100%;
     background: $greigh-light;
     padding:30px auto;
-    padding-bottom: 50px;
+    padding-bottom:20px;
     &:hover {
       background: $yellow;
     }
@@ -39,7 +39,10 @@
 .talks {
   margin-bottom: 40px;
   line-height: 195%;
-  font-size: 1.25vw;
+  font-size: 18px;
+  @media (max-width: 768px) {
+    font-size:22px;
+  }
 
     h4 {
       text-transform: uppercase;
