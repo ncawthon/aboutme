@@ -4203,6 +4203,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/i\/mastheads\/credits-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58872,
+		"inputAbbreviatedPath": "\/i\/mastheads\/credits-bg.jpg",
+		"outputAbbreviatedPath": "\/i\/mastheads\/credits-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/i\/mastheads\/home-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -4221,6 +4232,17 @@
 		"initialSize": 2.10856e+06,
 		"inputAbbreviatedPath": "\/i\/mastheads\/home-bg.png",
 		"outputAbbreviatedPath": "\/i\/mastheads\/home-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/i\/mastheads\/mandolux-kitchen-01-l-1440.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 112352,
+		"inputAbbreviatedPath": "\/i\/mastheads\/mandolux-kitchen-01-l-1440.jpg",
+		"outputAbbreviatedPath": "\/i\/mastheads\/mandolux-kitchen-01-l-1440.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

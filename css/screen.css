@@ -1991,9 +1991,11 @@ a:hover {
   width: 100%;
   overflow: hidden;
   height: 36vw; }
+  .masthead.credits {
+    background: black url(../i/mastheads/credits-bg.jpg) no-repeat; }
   @media (max-width: 768px) {
     .masthead {
-      height: 300px; } }
+      height: 270px; } }
   .masthead video {
     position: relative;
     display: block;
@@ -2001,23 +2003,40 @@ a:hover {
     width: 100%;
     z-index: -1000;
     overflow: hidden;
-    background: transparent url(i/mastheads/home-bg.png) no-repeat;
+    background: transparent url(../i/mastheads/home-bg.png) no-repeat;
     background-size: 100%; }
-  .masthead.home {
+    @media (max-width: 768px) {
+      .masthead video {
+        height: auto; } }
+  .masthead.home, .masthead.credits {
     border-bottom: 1px solid #aaa; }
-    .masthead.home h1 {
+    .masthead.home h1, .masthead.home h4, .masthead.credits h1, .masthead.credits h4 {
       position: absolute;
-      color: #fff;
       z-index: 2;
-      top: 13vw;
-      left: 10%;
-      line-height: 135%;
+      color: #fff;
+      width: 100%;
       text-shadow: 1px 1px #474747; }
+      .masthead.home h1 span, .masthead.home h4 span, .masthead.credits h1 span, .masthead.credits h4 span {
+        padding-left: 10px;
+        padding-right: 10px;
+        background: rgba(0, 0, 0, 0.55); }
+    .masthead.home h1, .masthead.credits h1 {
+      top: 100px;
+      line-height: 135%; }
       @media (max-width: 768px) {
-        .masthead.home h1 {
-          top: 150px; } }
-      .masthead.home h1 span {
-        background: rgba(0, 0, 0, 0.5); }
+        .masthead.home h1, .masthead.credits h1 {
+          top: 120px;
+          font-size: 250%;
+          text-align: center; } }
+    .masthead.home h4, .masthead.credits h4 {
+      top: 175px;
+      font-weight: 200;
+      font-size: 150%; }
+      @media (max-width: 768px) {
+        .masthead.home h4, .masthead.credits h4 {
+          top: 195px;
+          font-size: 200%;
+          text-align: center; } }
   .masthead.subpage {
     height: 14vw; }
     @media (max-width: 768px) {
@@ -2109,7 +2128,7 @@ a:hover {
           font-size: 82px; } }
       @media (max-width: 768px) {
         .masthead.projects h1, .masthead.projects h6 {
-          top: 12vw;
+          top: 10vw;
           font-size: 64px; } }
     .masthead.projects:before {
       height: 25vw;
@@ -2141,7 +2160,7 @@ a:hover {
           font-size: 82px; } }
       @media (max-width: 768px) {
         .masthead.talks h1, .masthead.talks h6 {
-          top: 14vw;
+          top: 10vw;
           font-size: 64px; } }
     .masthead.talks:before {
       height: 25vw;
@@ -2158,19 +2177,34 @@ a:hover {
           height: 30vw;
           background-position-y: 0px; } }
   .masthead.microsoft h1, .masthead.microsoft h6 {
-    color: #474747;
-    text-shadow: 1px 0px #fff; }
+    color: #fff;
+    text-shadow: 1px 1px #474747;
+    margin-bottom: 5px; }
+    .masthead.microsoft h1 span, .masthead.microsoft h6 span {
+      padding-left: 10px;
+      padding-right: 10px;
+      background: rgba(255, 0, 192, 0.25); }
   .masthead.microsoft:before {
     background-position-y: -50px;
     background-size: 105%; }
   .masthead.sfgiants h1, .masthead.sfgiants h6 {
     color: #fff;
-    text-shadow: 1px 1px #474747; }
+    text-shadow: 1px 1px #474747;
+    margin-bottom: 5px; }
+    .masthead.sfgiants h1 span, .masthead.sfgiants h6 span {
+      padding-left: 10px;
+      padding-right: 10px;
+      background: rgba(255, 114, 0, 0.5); }
   .masthead.sfgiants:before {
     background-position-y: 0px; }
   .masthead.loggly h1, .masthead.loggly h6 {
     color: #fff;
-    text-shadow: 1px 1px #474747; }
+    text-shadow: 1px 1px #474747;
+    margin-bottom: 5px; }
+    .masthead.loggly h1 span, .masthead.loggly h6 span {
+      padding-left: 10px;
+      padding-right: 10px;
+      background: rgba(57, 29, 2, 0.5); }
   .masthead.loggly:before {
     background-position-y: -140px;
     background-size: 125%;
@@ -2180,13 +2214,23 @@ a:hover {
     -ms-filter: blur(3px); }
   .masthead.parc h1, .masthead.parc h6 {
     color: #fff;
-    text-shadow: 1px 1px #474747; }
+    text-shadow: 1px 1px #474747;
+    margin-bottom: 5px; }
+    .masthead.parc h1 span, .masthead.parc h6 span {
+      padding-left: 10px;
+      padding-right: 10px;
+      background: rgba(123, 123, 123, 0.75); }
   .masthead.parc:before {
     background-position-y: -140px;
     background-size: 125%; }
   .masthead.npm h1, .masthead.npm h6 {
-    color: #111;
-    text-shadow: 1px 1px #fff; }
+    color: #fff;
+    text-shadow: 1px 1px #474747;
+    margin-bottom: 5px; }
+    .masthead.npm h1 span, .masthead.npm h6 span {
+      padding-left: 10px;
+      padding-right: 10px;
+      background: rgba(255, 0, 0, 0.5); }
   .masthead.npm:before {
     background-position-y: -10%;
     background-size: 50%;
@@ -2197,13 +2241,23 @@ a:hover {
     -ms-filter: blur(0px); }
   .masthead.swy h1, .masthead.swy h6 {
     color: #fff;
-    text-shadow: 1px 1px #111; }
+    text-shadow: 1px 1px #474747;
+    margin-bottom: 5px; }
+    .masthead.swy h1 span, .masthead.swy h6 span {
+      padding-left: 10px;
+      padding-right: 10px;
+      background: rgba(31, 69, 5, 0.5); }
   .masthead.swy:before {
     background-position-y: -50px;
     background-size: 100%; }
   .masthead.walmart h1, .masthead.walmart h6 {
     color: #fff;
-    text-shadow: 1px 1px #474747; }
+    text-shadow: 1px 1px #474747;
+    margin-bottom: 5px; }
+    .masthead.walmart h1 span, .masthead.walmart h6 span {
+      padding-left: 10px;
+      padding-right: 10px;
+      background: rgba(0, 0, 255, 0.25); }
   .masthead.walmart:before {
     background-position-y: -140px;
     background-size: 125%;
@@ -2216,7 +2270,12 @@ a:hover {
         background-position-y: 0px; } }
   .masthead.verizon h1, .masthead.verizon h6 {
     color: #fff;
-    text-shadow: 1px 1px #474747; }
+    text-shadow: 1px 1px #474747;
+    margin-bottom: 5px; }
+    .masthead.verizon h1 span, .masthead.verizon h6 span {
+      padding-left: 10px;
+      padding-right: 10px;
+      background: rgba(255, 0, 0, 0.5); }
   .masthead.verizon:before {
     background-size: 105%;
     background-position-x: -45px;
@@ -2225,8 +2284,13 @@ a:hover {
     -o-filter: blur(3px);
     -ms-filter: blur(3px); }
   .masthead.united h1, .masthead.united h6 {
-    color: #111;
-    text-shadow: 1px 1px #fff; }
+    color: #fff;
+    text-shadow: 1px 1px #474747;
+    margin-bottom: 5px; }
+    .masthead.united h1 span, .masthead.united h6 span {
+      padding-left: 10px;
+      padding-right: 10px;
+      background: rgba(40, 5, 69, 0.5); }
   .masthead.united:before {
     background-position-y: -25%;
     background-size: 60%;
@@ -2303,16 +2367,16 @@ a:hover {
       flex: 1 0 auto;
       max-height: 320px;
       overflow: hidden; }
+      @media (max-width: 768px) {
+        .skillset .skill .thumb {
+          display: none; } }
       .skillset .skill .thumb img {
         max-width: 100%;
         width: 100%;
         margin-top: 20px; }
         @media (max-width: 768px) {
           .skillset .skill .thumb img {
-            display: block;
-            width: 100%;
-            float: left;
-            clear: both; } }
+            display: none; } }
       @media (max-width: 768px) {
         .skillset .skill .thumb {
           display: inline-block;
@@ -2325,7 +2389,7 @@ a:hover {
   padding-bottom: 60px; }
   .trust h4 {
     width: 100%;
-    font-size: 1.25vw;
+    font-size: 18px;
     text-align: center;
     text-transform: uppercase;
     color: #aaa; }
@@ -2350,7 +2414,7 @@ a:hover {
   color: #fff; }
   .quote h4 {
     width: 100%;
-    font-size: 1.25vw;
+    font-size: 18px;
     text-align: center;
     text-transform: uppercase; }
   .quote p {
@@ -2374,7 +2438,7 @@ a:hover {
   margin-bottom: 60px; }
   .featured h4 {
     width: 100%;
-    font-size: 1.25vw;
+    font-size: 18px;
     text-align: center;
     text-transform: uppercase;
     color: #aaa; }
@@ -2419,7 +2483,13 @@ a:hover {
   .nav li {
     color: #fff; }
     .nav li a {
+      font-size: 135%;
       color: #fff; }
+      @media (max-width: 768px) {
+        .nav li a {
+          font-size: 150%;
+          margin-bottom: 1px solid #aaa;
+          padding: 10px auto; } }
       .nav li a:hover {
         color: blue; }
 
@@ -2443,10 +2513,10 @@ footer {
     line-height: 40px;
     text-align: center;
     color: #fff; }
-    footer a .credits {
-      font-size: 24px; }
-    footer a .iconic {
-      font-size: 20px; }
+    footer a.credits {
+      font-size: 16px; }
+    footer a.iconic {
+      font-size: 18px; }
     footer a:hover {
       background: #333;
       text-decoration: none;
@@ -2589,6 +2659,15 @@ ul.projects li {
   float: right; }
   .breadcrumb > li + li.next:before {
     content: none; }
+
+.credit-page {
+  margin-top: 60px; }
+  .credit-page h4 {
+    margin-bottom: 20px; }
+  .credit-page dl {
+    margin-bottom: 60px; }
+  .credit-page dd {
+    margin: 10px auto; }
 
 .carousel {
   margin-bottom: 20px; }

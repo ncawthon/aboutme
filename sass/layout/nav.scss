@@ -3,7 +3,14 @@
   li {
     color:$white;
     a {
+      font-size: 135%;
       color:$white;
+      @media (max-width: 768px) {
+        font-size: 150%;
+        margin-bottom: 1px solid #aaa;
+        padding:10px auto;
+      }
+
       &:hover {
         color:blue;
       }
