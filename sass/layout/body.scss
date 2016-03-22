@@ -1,38 +1,48 @@
 .masthead {
+
+  display: block;
   width:100%;
-  height:38vw;
-  color: $white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  height: 36vw;
+
+  @media (max-width: 768px) {
+    height: 300px;
+  }
+
+  video {
+    position: relative;
+    display: block;
+    min-width: 100%;
+    width: 100%;
+    z-index: -1000;
+    overflow: hidden;
+    background:transparent url(i/mastheads/home-bg.png) no-repeat;
+    background-size:100%;
+  }
+
   &.home {
     h1 {
+      position: absolute;
+      color:$white;
       z-index:2;
-      margin-top:-50px;
+      top:13vw;
+      left:10%;
+      line-height: 135%;
       text-shadow: 1px 1px $greigh-darker;
+      @media (max-width: 768px) {
+        top: 150px;
+      }
+      & span {
+        background: rgba(0,0,0,.5);
+      }
     }
-  }
-  div.clouds {
-      position:absolute;
-      z-index:1;
-      margin:0 auto;
-      width:100%;
-      overflow: hidden;
-      height:38vw;
-      top:0px;
-      background-color:$greigh-darker;
-      border-bottom:1px solid $greigh-darker;
-  }
-  div.clouds video, div.clouds object, div.clouds embed {
-      /*width: 100%;*/
-      width: 100%;
-      margin: 0 auto;
-      opacity: .5;
   }
 
 	&.subpage {
-		height:16vw;
+		height:14vw;
+    @media (max-width: 768px) {
+      height:16vw;
+    }
 
     $types: (
       (microsoft),
@@ -51,32 +61,50 @@
     @each $item in $types {
       &.#{$item}:before {
         background-image: url(../i/#{$item}/masthead.png);
+          @media (max-width: 768px) {
+            background-image: url(../i/#{$item}/masthead-small.png);
+          }
         }
       }
 
     &:before {
         content: '';
-        background-size: 105%;
+        background-size: 120%;
         background-position-y: -50px;
-        -webkit-filter: blur(5px);
-        -moz-filter: blur(5px);
-        -o-filter: blur(5px);
-        -ms-filter: blur(5px);
+        background-position-x: -15px;
         filter: blur(5px);
         z-index: -9999;
         position: absolute;
-        margin-bottom: -5px;
-        height: 16.5vw;
-        width: 101%;
+        height: 15vw;
+        width: 100%;
         top:50px;
+        margin-top:-10px;
+        overflow: hidden;
+        @media (max-width: 768px) {
+          height:20vw;
+        }
       }
     }
 
     &.projects {
       height: 25vw;
+      @media (max-width: 768px) {
+        height:35vw;
+      }
+
       h1, h6 {
         color:$white;
         text-shadow: 1px 1px $greigh-darker;
+        font-size: 300%;
+        top: 10vw;
+
+        @media (min-width: 768px) {
+          font-size:82px;
+        }
+        @media (max-width: 768px) {
+          top: 12vw;
+          font-size:64px;
+        }
       }
         &:before {
         height: 25vw;
@@ -88,14 +116,32 @@
         -o-filter: blur(0px);
         -ms-filter: blur(0px);
         border-bottom: 1px solid #333;
+        @media (max-width: 768px) {
+          height: 35vw;
+          background-position-y: 0px;
+        }
       }
     }
 
     &.talks {
       height: 25vw;
+      @media (max-width: 768px) {
+        height:30vw;
+      }
+
       h1, h6 {
         color:$white;
         text-shadow: 1px 1px $greigh-darker;
+        font-size: 300%;
+        top: 10vw;
+
+        @media (min-width: 768px) {
+          font-size:82px;
+        }
+        @media (max-width: 768px) {
+          top: 14vw;
+          font-size:64px;
+        }
       }
         &:before {
         height: 25vw;
@@ -106,8 +152,11 @@
         -moz-filter: blur(0px);
         -o-filter: blur(0px);
         -ms-filter: blur(0px);
-
         border-bottom: 1px solid #333;
+        @media (max-width: 768px) {
+          height: 30vw;
+          background-position-y: 0px;
+        }
       }
     }
 
@@ -117,24 +166,26 @@
         text-shadow: 1px 0px $white;
       }
       &:before {
+        background-position-y: -50px;
+        background-size: 105%;
       }
     }
 
 
     &.sfgiants {
+      h1, h6 {
+        color:$white;
+        text-shadow: 1px 1px $greigh-darker;
+      }
       &:before {
         background-position-y:0px;
-        background-size: 125%;
-        -webkit-filter: blur(4px);
-        -moz-filter: blur(4px);
-        -o-filter: blur(4px);
-        -ms-filter: blur(4px);
       }
     }
 
     &.loggly {
       h1, h6 {
-        text-shadow: 1px 1px $black;
+        color:$white;
+        text-shadow: 1px 1px $greigh-darker;
       }
       &:before {
         background-position-y:-140px;
@@ -148,15 +199,12 @@
 
     &.parc {
       h1, h6 {
-        text-shadow: 1px 1px $black;
+        color:$white;
+        text-shadow: 1px 1px $greigh-darker;
       }
       &:before {
         background-position-y:-140px;
         background-size: 125%;
-        -webkit-filter: blur(3px);
-        -moz-filter: blur(3px);
-        -o-filter: blur(3px);
-        -ms-filter: blur(3px);
       }
     }
 
@@ -200,6 +248,9 @@
         -moz-filter: blur(3px);
         -o-filter: blur(3px);
         -ms-filter: blur(3px);
+        @media (max-width: 768px) {
+          background-position-y:0px;
+        }
       }
     }
 
@@ -237,15 +288,17 @@
 
   h1 {
     font-size: 5vw;
-    font-weight: 100;
+    font-weight: 200;
     position: relative;
     z-index: 0;
   }
 
   h6 {
     font-size: 1.5vw;
-    font-weight: 100;
-    text-align: left;
+    font-weight: 200;
+    @media (max-width: 768px) {
+      font-size:14px;
+    }
   }
 }
 
@@ -275,6 +328,9 @@
       flex-direction: row;
       .deets {
         padding-right:40px;
+        @media (max-width: 768px) {
+          padding-left:0px;
+        }
       }
     }
 
@@ -282,6 +338,9 @@
       flex-direction: row-reverse;
       .deets {
         padding-left:40px;
+        @media (max-width: 768px) {
+          padding-left:0px;
+        }
       }
     }
 
@@ -292,6 +351,11 @@
       float: left;
       width: 60%;
       font-size: 115%;
+      @media (max-width: 768px) {
+        flex: 1 0 0 auto;
+        width: 100%;
+        text-align: center;
+      }
     }
 
     h3 {
@@ -324,6 +388,21 @@
           /* optionally force a minimum size if img src size is known: */
           /* min-height: 320px; /* max-height of .crop-height */
           /* min-width: 480px; /* proportional to above */
+
+          @media (max-width: 768px) {
+              display:block;;
+              width:100%;
+              float:left;
+              clear: both;
+          }
+
+      }
+      @media (max-width: 768px) {
+          display:inline-block;;
+          width:100%;
+          float:left;
+          clear: none;
+
       }
     }
   }
@@ -347,6 +426,9 @@
     li {
       float: left;
       width:20%;
+      @media (max-width: 768px) {
+        width:50%;
+      }
       img {
         width: 85%;
       }
@@ -372,9 +454,15 @@
     font-size: 2.75vw;
     font-style: italic;
     line-height: 135%;
+    @media (max-width: 768px) {
+      font-size:200%;
+    }
     span {
       font-size: 2.15vw;
       line-height: 150%;
+      @media (max-width: 768px) {
+        font-size:85%;
+      }
     }
   }
 }

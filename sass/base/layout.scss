@@ -1,3 +1,15 @@
 body {
   margin-top: 50px;
 }
+
+.clearfix {
+  @media (min-width: 768px) {
+  clear:both;
+  }
+}
+
+.sm-clearfix {
+  @media (max-width: 768px) {
+  clear:both;
+  }
+}
