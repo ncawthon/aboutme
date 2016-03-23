@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, #db5945">
     <title>Nick Cawthon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -25,7 +24,7 @@
 
   </head>
   <body>
-  <nav class="navbar navbar-fixed-top navbar-inverse">
+  <nav class="navbar navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -45,8 +44,8 @@
         </div><!--/.container-fluid -->
     </nav>
 
-    <div class="masthead home">
-      <video autoplay="true" loop="true" muted="true" poster="i/mastheads/home-bg.jpg" id="video-bg">
+    <div class="masthead home hidden-xs">
+      <video autoplay="true" loop="true" muted="true" id="video-bg">
           <source src="i/mastheads/home-bg-2.webm" type="video/webm">
           <source src="i/mastheads/home-bg-2.mp4" type="video/mp4">
       </video>
@@ -55,42 +54,44 @@
       </div>
     </div>
 
-      <section class="container skillset">
+      <div class="masthead home hidden-sm hidden-md hidden-lg hidden-xl">
+          <h1><span>Let's work through these<br />problems together.</span></h1>
+          <img src="i/mastheads/home-bg.jpg" />
+      </div>
 
-        <div class="skill container left">
-          <div class="deets col-xs-7">
-            <h3>Product Ideation &amp; Strategy</h3>
-            <p>Do you like sticky notes? Good. I do too. Let's fill a wall full of them. The awesome ideas right next to the crazy ones. When we are done, we'll have distilled what was once just a concept into something succienct.</p>
-            <p><a href="projects.html">View project examples »</a></p>
-          </div>
-          <div class="thumb col-xs-5">
-            <img src="i/skills/idea.png">
-          </div>
+
+
+    <ul class="container projects">
+      <li class="right first">
+        <div class="deets">
+          <h2>Product Ideation &amp; Strategy</h2>
+          <p>Big data at its finest - the chance to parse and visualize terabytes of unique logging data each day. A novel approach to displaying heirarchial data structures, when launched, changed the industry. What was initially unparsable from a cognition standpoint, now became a beautiful display of information.</p>
         </div>
-
-        <div class="skill container right">
-          <div class="deets col-xs-7">
-            <h3>Interaction Design &amp; Prototyping</h3>
-            <p>Can get you to your goal in one click instead of two? If so, then we've done our job. If the application is something that causes you even the smallest amount of delight - then we've designed it the right way. </p>
-            <p><a href="projects.html">View project examples »</a></p>
-          </div>
-          <div class="thumb col-xs-5">
-            <img src="i/skills/tools.png">
-          </div>
+        <div class="thumb" >
+          <img src="i/skills/idea.png"/>
         </div>
+      </li>
 
-        <div class="skill container last left">
-          <div class="deets col-xs-7">
-            <h3>User Validation Research</h3>
-            <p>Do you know who your users are? What is their #1 point of frustration, and let's make it our top priority. The ideas and concepts that come from user sessions are worth more than any meeting can ever yield.</p>
-            <p><a href="projects.html">View project examples »</a></p>
+        <li class="left">
+          <div class="deets">
+            <h2>Interaction Design &amp; Prototyping</h2>
+            <p>The Zune Marketplace store was Microsoft’s equivalent to the iTunes store – where users would go to browse, share and purchase media. Working with the Redmond office's Home & Entertainment division - a non-traditional page structure and information layout really captured the vibrancy of the artist-based content offering.</p>
           </div>
-          <div class="thumb col-xs-5">
-            <img src="i/skills/ppl.png">
+          <div class="thumb" >
+            <img src="i/skills/tools.png"/>
           </div>
-        </div>
+        </li>
 
-    </section>
+        <li class="right">
+          <div class="deets">
+            <h2>User Validation Research</h2>
+            <p>Everyone's favorite front-end package manager presented a unique challenge on how to manage an expontentially growing number of user scenarios and feature requests. High-fidelity, interactive prototypes, placed into a continuous stream of user testing gave this small start-up a rapid iteration cycle for which to prioritize their product prioritization and development.</p>
+          </div>
+          <div class="thumb" >
+            <img src="i/skills/ppl.png"/>
+          </div>
+        </li>
+    </ul>
 
     <section class="quote">
       <section class="container">
@@ -141,17 +142,16 @@
         </section>
       </section> -->
 
-<footer class="site-footer">
+<footer>
   <div class="container">
-      <ul class="nav navbar-nav navbar-left navbar-inverse">
-          <li><a href="credits.html" class="credits" target="_blank">Project Credits</a></li>
+      <ul class="nav navbar-nav navbar-left">
+          <li><a href="credits.html" class="credits">Project Credits</a></li>
       </ul>
-      </li>
-        <ul class="nav navbar-nav navbar-right navbar-inverse">
-          <li><a href="#" target="_blank"><span aria-hidden="true" class="iconic iconic-social-twitter"></span></a></li>
-          <li><a href="#" target="_blank"><span aria-hidden="true" class="iconic iconic-social-linkedin"></span></a></li>
-          <li><a href="#" target="_blank"><span aria-hidden="true" class="iconic iconic-social-dribbble"></span></a></li>
-        </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://twitter.com/ncawthon" target="_blank"><span aria-hidden="true" class="iconic iconic-social-twitter"></span></a></li>
+        <li><a href="https://www.linkedin.com/in/nickcawthon" target="_blank"><span aria-hidden="true" class="iconic iconic-social-linkedin"></span></a></li>
+        <li><a href="https://dribbble.com/nickcawthon" target="_blank"><span aria-hidden="true" class="iconic iconic-social-dribbble"></span></a></li>
+      </ul>
   </div>
 </footer>
 </div>

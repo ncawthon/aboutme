@@ -1,5 +1,4 @@
 .masthead {
-
   display: block;
   width:100%;
   overflow: hidden;
@@ -10,7 +9,7 @@
   }
 
   @media (max-width: 768px) {
-    height: 270px;
+    height: 200px;
   }
 
   video {
@@ -23,13 +22,21 @@
     background:transparent url(../i/mastheads/home-bg.png) no-repeat;
     background-size:100%;
     @media (max-width: 768px) {
-      height:auto;
+      height:200px;
     }
   }
 
-  &.home, &.credits {
-    border-bottom: 1px solid #aaa;
+  img {
+    position:absolute;
+    top:50px;
+    z-index: -1000;
+    width:100%;
+    height:200px;
+    overflow: hidden;
+  }
 
+  &.home, &.credits {
+    border-bottom: 5px solid gold;
     h1, h4 {
       position: absolute;
       z-index:2;
@@ -46,19 +53,20 @@
     h1 {
       top:100px;
       line-height: 135%;
+      font-size: 72px;
       @media (max-width: 768px) {
-        top: 120px;
-        font-size: 250%;
+        top: 80px;
+        font-size: 200%;
         text-align: center;
       }
     }
     h4 {
-      top:175px;
+      top:220px;
       font-weight: 200;
-      font-size: 150%;
+      font-size: 48px;
       @media (max-width: 768px) {
-        top: 195px;
-        font-size: 200%;
+        top: 145px;
+        font-size: 155%;
         text-align: center;
       }
 
@@ -66,9 +74,9 @@
   }
 
 	&.subpage {
-		height:14vw;
+		height:200px;
     @media (max-width: 768px) {
-      height:16vw;
+      height:100px;
     }
 
     $types: (
@@ -96,27 +104,27 @@
 
     &:before {
         content: '';
-        background-size: 120%;
-        background-position-y: -50px;
-        background-position-x: -15px;
-        filter: blur(5px);
+        background-size:100%;
+        background-position-y:0px;
+        background-position-x:0px;
         z-index: -9999;
         position: absolute;
-        height: 15vw;
+        height: 200px;
         width: 100%;
         top:50px;
-        margin-top:-10px;
         overflow: hidden;
         @media (max-width: 768px) {
-          height:20vw;
+          height:100px;
         }
       }
     }
 
     &.projects {
-      height: 25vw;
+      height: 30vw;
+      margin-bottom: 40px;
       @media (max-width: 768px) {
         height:35vw;
+        margin-bottom: 0px;
       }
 
       h1, h6 {
@@ -124,20 +132,26 @@
         text-shadow: 1px 1px $greigh-darker;
         font-size: 300%;
         top: 10vw;
+        span {
+          padding-left:10px;
+          padding-right:10px;
+          background: rgba(0,0,0,.55);
+        }
 
         @media (min-width: 768px) {
           font-size:82px;
         }
         @media (max-width: 768px) {
-          top: 10vw;
-          font-size:64px;
+          top: 10px;
+          font-size:40px;
+          text-align: center;
         }
       }
         &:before {
-        height: 25vw;
+        height: 35vw;
         background-image: url(../i/mastheads/projects.jpg);
-        background-position-y: -150px;
-        background-size: 100%;
+        background-position-y:-150px;
+        background-size: 105%;
         -webkit-filter: blur(0px);
         -moz-filter: blur(0px);
         -o-filter: blur(0px);
@@ -145,13 +159,13 @@
         border-bottom: 1px solid #333;
         @media (max-width: 768px) {
           height: 35vw;
-          background-position-y: 0px;
+          background-position-y: -50px;
         }
       }
     }
 
     &.talks {
-      height: 25vw;
+      height: 30vw;
       background-position-y:0px;
 
       @media (max-width: 768px) {
@@ -163,19 +177,26 @@
         text-shadow: 1px 1px $greigh-darker;
         font-size: 300%;
         top: 10vw;
+        span {
+          padding-left:10px;
+          padding-right:10px;
+          background: rgba(0,0,0,.55);
+        }
 
         @media (min-width: 768px) {
           font-size:82px;
         }
         @media (max-width: 768px) {
-          top: 10vw;
-          font-size:64px;
+          top: 10px;
+          font-size:40px;
+          text-align: center;
         }
       }
         &:before {
-        height: 25vw;
+        height: 30vw;
         background-image: url(../i/mastheads/talks-masthead.jpg);
-        background-position-y: -40px;
+        background-position-x: 0px;
+        background-position-y: 0px;
         background-size: 100%;
         -webkit-filter: blur(0px);
         -moz-filter: blur(0px);
@@ -201,8 +222,8 @@
         }
       }
       &:before {
-        background-position-y: -50px;
-        background-size: 105%;
+        background-position-y:0px;
+        background-size: 100%;
       }
     }
 
@@ -219,7 +240,12 @@
         }
       }
       &:before {
-        background-position-y:0px;
+        background-size:105%;
+        background-position-y:5%;
+        background-position-x:-25%;
+        @media (max-width: 768px) {
+          background-size:105%;
+        }
       }
     }
 
@@ -231,16 +257,10 @@
         span {
           padding-left:10px;
           padding-right:10px;
-          background: rgba(57,29,2,.5);
+          background: rgba(57,29,2,.75);
         }
       }
       &:before {
-        background-position-y:-140px;
-        background-size: 125%;
-        -webkit-filter: blur(3px);
-        -moz-filter: blur(3px);
-        -o-filter: blur(3px);
-        -ms-filter: blur(3px);
       }
     }
 
@@ -370,17 +390,25 @@
 
 
   h1 {
-    font-size: 5vw;
+    font-size: 62px;
+    top:20px;
     font-weight: 200;
     position: relative;
     z-index: 0;
+    @media (max-width: 768px) {
+      top:0px;
+      font-size:32px;
+    }
   }
 
   h6 {
-    font-size: 1.5vw;
-    font-weight: 200;
+    position: absolute;
+    font-size:20px;
+    top:160px;
+    font-weight:200;
     @media (max-width: 768px) {
-      font-size:14px;
+      top:100px;
+      font-size:12px;
     }
   }
 }
@@ -388,114 +416,6 @@
 
 .section {
   margin: 20px auto;
-}
-
-.skillset {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: flex-start;
-  padding-bottom:60px;
-  border-bottom: 1px dotted $greigh-mid;
-
-  .skill {
-    flex: 1 0 auto;
-    display: flex;
-    align-self: auto;
-    width: 100%;
-    height:auto;
-    border-bottom:1px solid #ccc;
-    &.last {
-      border-bottom:none;
-    }
-    &.left {
-      flex-direction: row;
-      .deets {
-        padding-right:40px;
-        @media (max-width: 768px) {
-          padding-left:0px;
-        }
-      }
-    }
-
-    &.right {
-      flex-direction: row-reverse;
-      .deets {
-        padding-left:40px;
-        @media (max-width: 768px) {
-          padding-left:0px;
-        }
-      }
-    }
-
-    .deets {
-      flex: 3 0 auto;
-      margin:4vw 0px;
-      display: inline-block;
-      float: left;
-      width: 60%;
-      font-size: 115%;
-      @media (max-width: 768px) {
-        flex: 1 0 0 auto;
-        width: 100%;
-        text-align: center;
-      }
-    }
-
-    h3 {
-      font-size: 175%;
-      width: 100%;
-      margin-bottom: 20px;
-      margin-top:0px;
-    }
-
-    .thumb {
-      flex: 1 0 auto;
-      max-height:320px;
-      overflow: hidden;
-      @media (max-width: 768px) {
-        display: none;
-      }
-
-      img {
-          max-width: 100%;
-          width: 100%;
-          margin-top:20px;
-          // /* corrects small inline gap at bottom of containing div */
-          // display: block;
-          // width: 80%; /* corrects obscure Firefox bug */
-          // max-width: 80%;
-          // /* just in case, to force correct aspect ratio */
-          // height: auto !important;
-          // display: block; /* corrects small inline gap at bottom of containing div */
-          // width: 100%; /* corrects obscure Firefox bug */
-          // max-width: 80%;
-          // /* just in case, to force correct aspect ratio */
-          // height: auto !important;
-          // /*width: auto\9;
-          // /* ie8+9 - use modernizr instead of this \9 hack */
-          // /* lt ie8 */
-          // -ms-interpolation-mode: bicubic;
-          // /* optionally force a minimum size if img src size is known: */
-          // /* min-height: 320px; /* max-height of .crop-height */
-          // /* min-width: 480px; /* proportional to above */
-
-          @media (max-width: 768px) {
-            display: none;
-          }
-
-      }
-      @media (max-width: 768px) {
-          display:inline-block;;
-          width:100%;
-          float:left;
-          clear: none;
-
-      }
-    }
-  }
 }
 
 .trust {
@@ -527,7 +447,9 @@
 }
 
 .quote {
-  background:#31708F;
+  border-top:5px solid gold;
+  border-bottom:5px solid gold;
+  background:#1b6508;
   padding:20px 0px;
   padding-bottom:50px;
   color:$white;
