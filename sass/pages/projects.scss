@@ -1,99 +1,99 @@
 ul.projects {
 
-  img {
-    background-color:$greigh-mid;
-    display: block;
-    border: 1px solid #aaa;
-  }
-
   li {
     list-style: none;
-
+    display: flex;
+    justify-content: flex-start;
+    border-top:1px solid $greigh-mid;
+    @media (max-width: 768px) {
+      margin:20px auto;
+      padding:20px auto;
+      text-align: center;
+    }
+    &.first {
+      border:none;
+      margin-top: 5vw;
+    }
     a {
       display: flex;
-      justify-content: flex-start;;
-      border-top:1px solid $greigh-mid;
       padding:20px;
       color:$black;
 
-      &.first {
-        border:none;
-        margin-top: 20px;
-      }
-
-      .deets {
-        flex:4 0 0;
-        margin:20px auto;
-        @media (max-width: 768px) {
-          flex:1 0 0;
-          margin:0px auto;
-        }
-      }
-
-      .thumb {
-        flex:3 0 0;
-        max-height:320px;
-        overflow: hidden;
-        margin:20px auto;
-        img {
-            /* corrects small inline gap at bottom of containing div */
-          	display: block;
-            width: 100%; /* corrects obscure Firefox bug */
-          	max-width: 100%;
-          	/* just in case, to force correct aspect ratio */
-          	height: auto !important;
-            display: block; /* corrects small inline gap at bottom of containing div */
-            width: 100%; /* corrects obscure Firefox bug */
-            max-width: 100%;
-            /* just in case, to force correct aspect ratio */
-            height: auto !important;
-            /*width: auto\9;
-            /* ie8+9 - use modernizr instead of this \9 hack */
-            /* lt ie8 */
-            -ms-interpolation-mode: bicubic;
-          	/* optionally force a minimum size if img src size is known: */
-          	/* min-height: 320px; /* max-height of .crop-height */
-          	/* min-width: 480px; /* proportional to above */
-        }
-        @media (max-width: 768px) {
-          flex:1 0 0;
-          margin:0px auto;
-        }
-      }
-
-      &.left {
-        flex-direction: row;
-
-        .thumb {
-          margin-left: 50px;
-          @media (max-width: 768px) {
-            flex:0 0 0;
-            margin-left:0px;
-          }
-        }
-      }
-
-      &.right {
-        flex-direction: row-reverse;
-
-        .deets {
-          text-align: left;
-        }
-
-        .thumb {
-          flex:3 0 0;
-          margin-right:50px;
-
-          @media (max-width: 768px) {
-            flex:0 0 0;
-            margin-right:0px;
-          }
-        }
-      }
       &:hover {
         background:$yellow;
       }
     }
+    .deets {
+      flex:3 0 0;
+      margin:20px auto;
+      @media (max-width: 768px) {
+        flex:1 0 0;
+        margin:10px auto;
+        text-align: center;
+      }
+    }
+
+    .thumb {
+      flex:3 0 0;
+      max-height:320px;
+      overflow: hidden;
+      margin:20px auto;
+      img {
+          /* corrects small inline gap at bottom of containing div */
+          display: block;
+          width: 100%; /* corrects obscure Firefox bug */
+          max-width: 100%;
+          /* just in case, to force correct aspect ratio */
+          height: auto !important;
+          display: block; /* corrects small inline gap at bottom of containing div */
+          width: 100%; /* corrects obscure Firefox bug */
+          max-width: 100%;
+          /* just in case, to force correct aspect ratio */
+          height: auto !important;
+          /*width: auto\9;
+          /* ie8+9 - use modernizr instead of this \9 hack */
+          /* lt ie8 */
+          -ms-interpolation-mode: bicubic;
+          /* optionally force a minimum size if img src size is known: */
+          /* min-height: 320px; /* max-height of .crop-height */
+          /* min-width: 480px; /* proportional to above */
+      }
+      @media (max-width: 768px) {
+        flex:1 0 0;
+        margin:0px auto;
+      }
+    }
+
+
+    &.left, &.left a {
+      flex-direction: row;
+
+      .thumb {
+        margin-left: 50px;
+        @media (max-width: 768px) {
+          flex:0 0 0;
+          text-align: center;
+          margin-left:0px;
+        }
+      }
+    }
+
+    &.right, &.right a {
+      flex-direction: row-reverse;
+
+      .thumb {
+        flex:3 0 0;
+        margin-right:50px;
+
+        @media (max-width: 768px) {
+          flex:0 0 0;
+          text-align: center;
+          margin-right:0px;
+        }
+      }
+    }
+
+
   }
 }
 
@@ -131,9 +131,17 @@ ul.projects {
 
 .credit-page {
   margin-top:60px;
+  @media (max-width: 768px) {
+    text-align: center;
+    font-size: 150%;
+  }
 
   h4 {
     margin-bottom: 20px;
+    @media (max-width: 768px) {
+      font-size: 150%;
+    }
+
   }
   dl {
     margin-bottom: 60px;

@@ -1,12 +1,21 @@
-.nav {
-  color:$white;
+.navbar {
+  background: #212670;
+  border-bottom:1px solid #000;
+
+  button {
+    border: 1px solid white;
+    background: #212670;
+    span.icon-bar {
+      background-color:white;
+    }
+  }
   li {
     color:$white;
     a {
-      font-size: 135%;
+      font-size: 18px;
       color:$white;
       @media (max-width: 768px) {
-        font-size: 150%;
+        font-size: 18px;
         margin-bottom: 1px solid #aaa;
         padding:10px auto;
       }
@@ -16,12 +25,19 @@
       }
     }
   }
-
+  a.navbar-brand  {
+      font-size: 18px;
+      color:$white;
+  }
 }
+
 .breadcrumb {
   padding:10px 15px;
   margin-bottom:0px;
   border-radius:0px;
+  @media (max-width: 768px) {
+    padding:5px 5px;
+  }
   &.bottom{
     border-bottom:1px solid $greigh-mid;
     border-top:1px solid $greigh-mid;

@@ -1995,7 +1995,7 @@ a:hover {
     background: black url(../i/mastheads/credits-bg.jpg) no-repeat; }
   @media (max-width: 768px) {
     .masthead {
-      height: 270px; } }
+      height: 200px; } }
   .masthead video {
     position: relative;
     display: block;
@@ -2007,9 +2007,16 @@ a:hover {
     background-size: 100%; }
     @media (max-width: 768px) {
       .masthead video {
-        height: auto; } }
+        height: 200px; } }
+  .masthead img {
+    position: absolute;
+    top: 50px;
+    z-index: -1000;
+    width: 100%;
+    height: 200px;
+    overflow: hidden; }
   .masthead.home, .masthead.credits {
-    border-bottom: 1px solid #aaa; }
+    border-bottom: 5px solid gold; }
     .masthead.home h1, .masthead.home h4, .masthead.credits h1, .masthead.credits h4 {
       position: absolute;
       z-index: 2;
@@ -2022,26 +2029,27 @@ a:hover {
         background: rgba(0, 0, 0, 0.55); }
     .masthead.home h1, .masthead.credits h1 {
       top: 100px;
-      line-height: 135%; }
+      line-height: 135%;
+      font-size: 72px; }
       @media (max-width: 768px) {
         .masthead.home h1, .masthead.credits h1 {
-          top: 120px;
-          font-size: 250%;
-          text-align: center; } }
-    .masthead.home h4, .masthead.credits h4 {
-      top: 175px;
-      font-weight: 200;
-      font-size: 150%; }
-      @media (max-width: 768px) {
-        .masthead.home h4, .masthead.credits h4 {
-          top: 195px;
+          top: 80px;
           font-size: 200%;
           text-align: center; } }
+    .masthead.home h4, .masthead.credits h4 {
+      top: 220px;
+      font-weight: 200;
+      font-size: 48px; }
+      @media (max-width: 768px) {
+        .masthead.home h4, .masthead.credits h4 {
+          top: 145px;
+          font-size: 155%;
+          text-align: center; } }
   .masthead.subpage {
-    height: 14vw; }
+    height: 200px; }
     @media (max-width: 768px) {
       .masthead.subpage {
-        height: 16vw; } }
+        height: 100px; } }
     .masthead.subpage.microsoft:before {
       background-image: url(../i/microsoft/masthead.png); }
       @media (max-width: 768px) {
@@ -2099,42 +2107,47 @@ a:hover {
           background-image: url(../i/verizon/masthead-small.png); } }
     .masthead.subpage:before {
       content: '';
-      background-size: 120%;
-      background-position-y: -50px;
-      background-position-x: -15px;
-      filter: blur(5px);
+      background-size: 100%;
+      background-position-y: 0px;
+      background-position-x: 0px;
       z-index: -9999;
       position: absolute;
-      height: 15vw;
+      height: 200px;
       width: 100%;
       top: 50px;
-      margin-top: -10px;
       overflow: hidden; }
       @media (max-width: 768px) {
         .masthead.subpage:before {
-          height: 20vw; } }
+          height: 100px; } }
   .masthead.projects {
-    height: 25vw; }
+    height: 30vw;
+    margin-bottom: 40px; }
     @media (max-width: 768px) {
       .masthead.projects {
-        height: 35vw; } }
+        height: 35vw;
+        margin-bottom: 0px; } }
     .masthead.projects h1, .masthead.projects h6 {
       color: #fff;
       text-shadow: 1px 1px #474747;
       font-size: 300%;
       top: 10vw; }
+      .masthead.projects h1 span, .masthead.projects h6 span {
+        padding-left: 10px;
+        padding-right: 10px;
+        background: rgba(0, 0, 0, 0.55); }
       @media (min-width: 768px) {
         .masthead.projects h1, .masthead.projects h6 {
           font-size: 82px; } }
       @media (max-width: 768px) {
         .masthead.projects h1, .masthead.projects h6 {
-          top: 10vw;
-          font-size: 64px; } }
+          top: 10px;
+          font-size: 40px;
+          text-align: center; } }
     .masthead.projects:before {
-      height: 25vw;
+      height: 35vw;
       background-image: url(../i/mastheads/projects.jpg);
       background-position-y: -150px;
-      background-size: 100%;
+      background-size: 105%;
       -webkit-filter: blur(0px);
       -moz-filter: blur(0px);
       -o-filter: blur(0px);
@@ -2143,9 +2156,9 @@ a:hover {
       @media (max-width: 768px) {
         .masthead.projects:before {
           height: 35vw;
-          background-position-y: 0px; } }
+          background-position-y: -50px; } }
   .masthead.talks {
-    height: 25vw;
+    height: 30vw;
     background-position-y: 0px; }
     @media (max-width: 768px) {
       .masthead.talks {
@@ -2155,17 +2168,23 @@ a:hover {
       text-shadow: 1px 1px #474747;
       font-size: 300%;
       top: 10vw; }
+      .masthead.talks h1 span, .masthead.talks h6 span {
+        padding-left: 10px;
+        padding-right: 10px;
+        background: rgba(0, 0, 0, 0.55); }
       @media (min-width: 768px) {
         .masthead.talks h1, .masthead.talks h6 {
           font-size: 82px; } }
       @media (max-width: 768px) {
         .masthead.talks h1, .masthead.talks h6 {
-          top: 10vw;
-          font-size: 64px; } }
+          top: 10px;
+          font-size: 40px;
+          text-align: center; } }
     .masthead.talks:before {
-      height: 25vw;
+      height: 30vw;
       background-image: url(../i/mastheads/talks-masthead.jpg);
-      background-position-y: -40px;
+      background-position-x: 0px;
+      background-position-y: 0px;
       background-size: 100%;
       -webkit-filter: blur(0px);
       -moz-filter: blur(0px);
@@ -2185,8 +2204,8 @@ a:hover {
       padding-right: 10px;
       background: rgba(255, 0, 192, 0.25); }
   .masthead.microsoft:before {
-    background-position-y: -50px;
-    background-size: 105%; }
+    background-position-y: 0px;
+    background-size: 100%; }
   .masthead.sfgiants h1, .masthead.sfgiants h6 {
     color: #fff;
     text-shadow: 1px 1px #474747;
@@ -2196,7 +2215,12 @@ a:hover {
       padding-right: 10px;
       background: rgba(255, 114, 0, 0.5); }
   .masthead.sfgiants:before {
-    background-position-y: 0px; }
+    background-size: 105%;
+    background-position-y: 5%;
+    background-position-x: -25%; }
+    @media (max-width: 768px) {
+      .masthead.sfgiants:before {
+        background-size: 105%; } }
   .masthead.loggly h1, .masthead.loggly h6 {
     color: #fff;
     text-shadow: 1px 1px #474747;
@@ -2204,14 +2228,7 @@ a:hover {
     .masthead.loggly h1 span, .masthead.loggly h6 span {
       padding-left: 10px;
       padding-right: 10px;
-      background: rgba(57, 29, 2, 0.5); }
-  .masthead.loggly:before {
-    background-position-y: -140px;
-    background-size: 125%;
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px); }
+      background: rgba(57, 29, 2, 0.75); }
   .masthead.parc h1, .masthead.parc h6 {
     color: #fff;
     text-shadow: 1px 1px #474747;
@@ -2300,89 +2317,27 @@ a:hover {
     -o-filter: blur(0px);
     -ms-filter: blur(0px); }
   .masthead h1 {
-    font-size: 5vw;
+    font-size: 62px;
+    top: 20px;
     font-weight: 200;
     position: relative;
     z-index: 0; }
+    @media (max-width: 768px) {
+      .masthead h1 {
+        top: 0px;
+        font-size: 32px; } }
   .masthead h6 {
-    font-size: 1.5vw;
+    position: absolute;
+    font-size: 20px;
+    top: 160px;
     font-weight: 200; }
     @media (max-width: 768px) {
       .masthead h6 {
-        font-size: 14px; } }
+        top: 100px;
+        font-size: 12px; } }
 
 .section {
   margin: 20px auto; }
-
-.skillset {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: flex-start;
-  padding-bottom: 60px;
-  border-bottom: 1px dotted #ccc; }
-  .skillset .skill {
-    flex: 1 0 auto;
-    display: flex;
-    align-self: auto;
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ccc; }
-    .skillset .skill.last {
-      border-bottom: none; }
-    .skillset .skill.left {
-      flex-direction: row; }
-      .skillset .skill.left .deets {
-        padding-right: 40px; }
-        @media (max-width: 768px) {
-          .skillset .skill.left .deets {
-            padding-left: 0px; } }
-    .skillset .skill.right {
-      flex-direction: row-reverse; }
-      .skillset .skill.right .deets {
-        padding-left: 40px; }
-        @media (max-width: 768px) {
-          .skillset .skill.right .deets {
-            padding-left: 0px; } }
-    .skillset .skill .deets {
-      flex: 3 0 auto;
-      margin: 4vw 0px;
-      display: inline-block;
-      float: left;
-      width: 60%;
-      font-size: 115%; }
-      @media (max-width: 768px) {
-        .skillset .skill .deets {
-          flex: 1 0 0 auto;
-          width: 100%;
-          text-align: center; } }
-    .skillset .skill h3 {
-      font-size: 175%;
-      width: 100%;
-      margin-bottom: 20px;
-      margin-top: 0px; }
-    .skillset .skill .thumb {
-      flex: 1 0 auto;
-      max-height: 320px;
-      overflow: hidden; }
-      @media (max-width: 768px) {
-        .skillset .skill .thumb {
-          display: none; } }
-      .skillset .skill .thumb img {
-        max-width: 100%;
-        width: 100%;
-        margin-top: 20px; }
-        @media (max-width: 768px) {
-          .skillset .skill .thumb img {
-            display: none; } }
-      @media (max-width: 768px) {
-        .skillset .skill .thumb {
-          display: inline-block;
-          width: 100%;
-          float: left;
-          clear: none; } }
 
 .trust {
   padding: 20px 0px;
@@ -2408,7 +2363,9 @@ a:hover {
         width: 85%; }
 
 .quote {
-  background: #31708F;
+  border-top: 5px solid gold;
+  border-bottom: 5px solid gold;
+  background: #1b6508;
   padding: 20px 0px;
   padding-bottom: 50px;
   color: #fff; }
@@ -2478,25 +2435,37 @@ a:hover {
       .featured ul li:hover {
         background: #fdfce8; }
 
-.nav {
-  color: #fff; }
-  .nav li {
+.navbar {
+  background: #212670;
+  border-bottom: 1px solid #000; }
+  .navbar button {
+    border: 1px solid white;
+    background: #212670; }
+    .navbar button span.icon-bar {
+      background-color: white; }
+  .navbar li {
     color: #fff; }
-    .nav li a {
-      font-size: 135%;
+    .navbar li a {
+      font-size: 18px;
       color: #fff; }
       @media (max-width: 768px) {
-        .nav li a {
-          font-size: 150%;
+        .navbar li a {
+          font-size: 18px;
           margin-bottom: 1px solid #aaa;
           padding: 10px auto; } }
-      .nav li a:hover {
+      .navbar li a:hover {
         color: blue; }
+  .navbar a.navbar-brand {
+    font-size: 18px;
+    color: #fff; }
 
 .breadcrumb {
   padding: 10px 15px;
   margin-bottom: 0px;
   border-radius: 0px; }
+  @media (max-width: 768px) {
+    .breadcrumb {
+      padding: 5px 5px; } }
   .breadcrumb.bottom {
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc; }
@@ -2504,23 +2473,25 @@ a:hover {
 footer {
   width: 100%;
   height: 50px;
-  background-color: #111;
+  background-color: #212670;
   color: #fff; }
-  footer a {
+  footer .navbar-nav li span {
+    width: 60px;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px; }
+  footer .navbar-nav li a {
     display: block;
     height: 50px;
     padding: 0px;
-    line-height: 40px;
+    line-height: 50px;
     text-align: center;
-    color: #fff; }
-    footer a.credits {
-      font-size: 16px; }
-    footer a.iconic {
-      font-size: 18px; }
-    footer a:hover {
-      background: #333;
+    color: #fff;
+    font-size: 18px;
+    background-color: #212670; }
+    footer .navbar-nav li a:hover {
       text-decoration: none;
-      color: #ccc;
+      background-color: #212670;
       cursor: pointer; }
 
 .hilite {
@@ -2564,80 +2535,83 @@ footer {
     color: #aaa;
     margin: 40px auto 20px; }
 
-ul.projects img {
-  background-color: #ccc;
-  display: block;
-  border: 1px solid #aaa; }
 ul.projects li {
-  list-style: none; }
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid #ccc; }
+  @media (max-width: 768px) {
+    ul.projects li {
+      margin: 20px auto;
+      padding: 20px auto;
+      text-align: center; } }
+  ul.projects li.first {
+    border: none;
+    margin-top: 5vw; }
   ul.projects li a {
     display: flex;
-    justify-content: flex-start;
-    border-top: 1px solid #ccc;
     padding: 20px;
     color: #111; }
-    ul.projects li a.first {
-      border: none;
-      margin-top: 20px; }
-    ul.projects li a .deets {
-      flex: 4 0 0;
-      margin: 20px auto; }
-      @media (max-width: 768px) {
-        ul.projects li a .deets {
-          flex: 1 0 0;
-          margin: 0px auto; } }
-    ul.projects li a .thumb {
-      flex: 3 0 0;
-      max-height: 320px;
-      overflow: hidden;
-      margin: 20px auto; }
-      ul.projects li a .thumb img {
-        /* corrects small inline gap at bottom of containing div */
-        display: block;
-        width: 100%;
-        /* corrects obscure Firefox bug */
-        max-width: 100%;
-        /* just in case, to force correct aspect ratio */
-        height: auto !important;
-        display: block;
-        /* corrects small inline gap at bottom of containing div */
-        width: 100%;
-        /* corrects obscure Firefox bug */
-        max-width: 100%;
-        /* just in case, to force correct aspect ratio */
-        height: auto !important;
-        /*width: auto\9;
-        /* ie8+9 - use modernizr instead of this \9 hack */
-        /* lt ie8 */
-        -ms-interpolation-mode: bicubic;
-        /* optionally force a minimum size if img src size is known: */
-        /* min-height: 320px; /* max-height of .crop-height */
-        /* min-width: 480px; /* proportional to above */ }
-      @media (max-width: 768px) {
-        ul.projects li a .thumb {
-          flex: 1 0 0;
-          margin: 0px auto; } }
-    ul.projects li a.left {
-      flex-direction: row; }
-      ul.projects li a.left .thumb {
-        margin-left: 50px; }
-        @media (max-width: 768px) {
-          ul.projects li a.left .thumb {
-            flex: 0 0 0;
-            margin-left: 0px; } }
-    ul.projects li a.right {
-      flex-direction: row-reverse; }
-      ul.projects li a.right .deets {
-        text-align: left; }
-      ul.projects li a.right .thumb {
-        flex: 3 0 0;
-        margin-right: 50px; }
-        @media (max-width: 768px) {
-          ul.projects li a.right .thumb {
-            flex: 0 0 0;
-            margin-right: 0px; } }
     ul.projects li a:hover {
       background: #fdfce8; }
+  ul.projects li .deets {
+    flex: 3 0 0;
+    margin: 20px auto; }
+    @media (max-width: 768px) {
+      ul.projects li .deets {
+        flex: 1 0 0;
+        margin: 10px auto;
+        text-align: center; } }
+  ul.projects li .thumb {
+    flex: 3 0 0;
+    max-height: 320px;
+    overflow: hidden;
+    margin: 20px auto; }
+    ul.projects li .thumb img {
+      /* corrects small inline gap at bottom of containing div */
+      display: block;
+      width: 100%;
+      /* corrects obscure Firefox bug */
+      max-width: 100%;
+      /* just in case, to force correct aspect ratio */
+      height: auto !important;
+      display: block;
+      /* corrects small inline gap at bottom of containing div */
+      width: 100%;
+      /* corrects obscure Firefox bug */
+      max-width: 100%;
+      /* just in case, to force correct aspect ratio */
+      height: auto !important;
+      /*width: auto\9;
+      /* ie8+9 - use modernizr instead of this \9 hack */
+      /* lt ie8 */
+      -ms-interpolation-mode: bicubic;
+      /* optionally force a minimum size if img src size is known: */
+      /* min-height: 320px; /* max-height of .crop-height */
+      /* min-width: 480px; /* proportional to above */ }
+    @media (max-width: 768px) {
+      ul.projects li .thumb {
+        flex: 1 0 0;
+        margin: 0px auto; } }
+  ul.projects li.left, ul.projects li.left a {
+    flex-direction: row; }
+    ul.projects li.left .thumb, ul.projects li.left a .thumb {
+      margin-left: 50px; }
+      @media (max-width: 768px) {
+        ul.projects li.left .thumb, ul.projects li.left a .thumb {
+          flex: 0 0 0;
+          text-align: center;
+          margin-left: 0px; } }
+  ul.projects li.right, ul.projects li.right a {
+    flex-direction: row-reverse; }
+    ul.projects li.right .thumb, ul.projects li.right a .thumb {
+      flex: 3 0 0;
+      margin-right: 50px; }
+      @media (max-width: 768px) {
+        ul.projects li.right .thumb, ul.projects li.right a .thumb {
+          flex: 0 0 0;
+          text-align: center;
+          margin-right: 0px; } }
 
 .projects h2 {
   margin-top: 0px; }
@@ -2662,8 +2636,15 @@ ul.projects li {
 
 .credit-page {
   margin-top: 60px; }
+  @media (max-width: 768px) {
+    .credit-page {
+      text-align: center;
+      font-size: 150%; } }
   .credit-page h4 {
     margin-bottom: 20px; }
+    @media (max-width: 768px) {
+      .credit-page h4 {
+        font-size: 150%; } }
   .credit-page dl {
     margin-bottom: 60px; }
   .credit-page dd {
