@@ -39,6 +39,17 @@ h1.sub-page {
 a:hover {
   text-decoration: none; }
 
+.alert {
+  border-radius: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  height: 50px;
+  text-align: center; }
+  .alert p {
+    line-height: 50px; }
+  .alert a {
+    font-weight: bold; }
+
 /* Iconic for Bootstrap */
 /* Override Bootstrap default variable */
 @font-face {
@@ -2032,7 +2043,7 @@ a:hover {
         padding-right: 10px;
         background: rgba(0, 0, 0, 0.55); }
     .masthead.home h1, .masthead.credits h1 {
-      top: 100px;
+      top: 170px;
       line-height: 135%;
       font-size: 72px; }
       @media (max-width: 768px) {
@@ -2449,19 +2460,23 @@ a:hover {
       background-color: white; }
   .navbar li {
     color: #fff; }
-    .navbar li a {
+    .navbar li a, .navbar li a:active {
       font-size: 18px;
       color: #fff; }
       @media (max-width: 768px) {
-        .navbar li a {
+        .navbar li a, .navbar li a:active {
           font-size: 18px;
           margin-bottom: 1px solid #aaa;
           padding: 10px auto; } }
-      .navbar li a:hover {
+      .navbar li a:hover, .navbar li a:active:hover {
         color: blue; }
   .navbar a.navbar-brand {
     font-size: 18px;
     color: #fff; }
+
+.nav > li > a:hover {
+  background: lightblue;
+  background: #212670; }
 
 .breadcrumb {
   padding: 10px 15px;
@@ -2561,7 +2576,8 @@ ul.projects li {
       background: #fdfce8; }
   ul.projects li .deets {
     flex: 3 0 0;
-    margin: 20px auto; }
+    margin: 20px auto;
+    font-size: 135%; }
     @media (max-width: 768px) {
       ul.projects li .deets {
         flex: 1 0 0;
