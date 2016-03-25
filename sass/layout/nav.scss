@@ -32,9 +32,8 @@
   }
 }
 
-.nav>li>a:hover {
-    background: lightblue;
-    background: #212670;    
+.nav>li>a:hover, .nav>li>a:active {
+    color: #212670;
 }
 
 .breadcrumb {

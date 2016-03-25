@@ -43,10 +43,14 @@ a:hover {
   border-radius: 0px;
   margin-bottom: 0px;
   padding: 0px;
-  height: 50px;
+  padding-top: 5px;
+  height: auto;
   text-align: center; }
+  @media (max-width: 768px) {
+    .alert {
+      font-size: 12px; } }
   .alert p {
-    line-height: 50px; }
+    font-weight: 200; }
   .alert a {
     font-weight: bold; }
 
@@ -2474,9 +2478,8 @@ a:hover {
     font-size: 18px;
     color: #fff; }
 
-.nav > li > a:hover {
-  background: lightblue;
-  background: #212670; }
+.nav > li > a:hover, .nav > li > a:active {
+  color: #212670; }
 
 .breadcrumb {
   padding: 10px 15px;
