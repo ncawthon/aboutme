@@ -2559,7 +2559,7 @@ ul.projects li {
   list-style: none;
   display: flex;
   justify-content: flex-start;
-  border-top: 1px solid #ccc; }
+  border-top: 1px dotted #ccc; }
   @media (max-width: 768px) {
     ul.projects li {
       margin: 20px auto;
@@ -2567,7 +2567,7 @@ ul.projects li {
       text-align: center; } }
   ul.projects li.first {
     border: none;
-    margin-top: 5vw; }
+    margin-top: 40px; }
   ul.projects li a {
     display: flex;
     padding: 20px;
