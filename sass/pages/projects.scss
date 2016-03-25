@@ -4,7 +4,7 @@ ul.projects {
     list-style: none;
     display: flex;
     justify-content: flex-start;
-    border-top:1px solid $greigh-mid;
+    border-top:1px dotted $greigh-mid;
     @media (max-width: 768px) {
       margin:20px auto;
       padding:20px auto;
@@ -12,7 +12,7 @@ ul.projects {
     }
     &.first {
       border:none;
-      margin-top: 5vw;
+      margin-top: 40px;
     }
     a {
       display: flex;
