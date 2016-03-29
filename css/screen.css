@@ -2022,7 +2022,7 @@ a:hover {
     width: 100%;
     z-index: -1000;
     overflow: hidden;
-    background: transparent url(../i/mastheads/home-bg.png) no-repeat;
+    background: transparent url(../i/mastheads/home-bg-3.gif) no-repeat;
     background-size: 100%; }
     @media (max-width: 768px) {
       .masthead video {
@@ -2040,8 +2040,11 @@ a:hover {
       position: absolute;
       z-index: 2;
       color: #fff;
-      width: 100%;
+      width: 75%;
       text-shadow: 1px 1px #474747; }
+      @media (max-width: 768px) {
+        .masthead.home h1, .masthead.home h4, .masthead.credits h1, .masthead.credits h4 {
+          width: 100%; } }
       .masthead.home h1 span, .masthead.home h4 span, .masthead.credits h1 span, .masthead.credits h4 span {
         padding-left: 10px;
         padding-right: 10px;

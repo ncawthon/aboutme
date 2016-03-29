@@ -19,7 +19,7 @@
     width: 100%;
     z-index: -1000;
     overflow: hidden;
-    background:transparent url(../i/mastheads/home-bg.png) no-repeat;
+    background:transparent url(../i/mastheads/home-bg-3.gif) no-repeat;
     background-size:100%;
     @media (max-width: 768px) {
       height:200px;
@@ -41,7 +41,10 @@
       position: absolute;
       z-index:2;
       color:$white;
-      width:100%;
+      width:75%;
+      @media (max-width: 768px) {
+        width:100%;
+      }
       text-shadow: 1px 1px $greigh-darker;
       span {
         padding-left:10px;
